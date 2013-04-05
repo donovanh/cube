@@ -22,7 +22,7 @@ body
   position: absolute
   @include perspective(1600px)
   @include perspective-origin(50% -340px)
-  @include animation(introduceCube 1s ease-out)
+  @include animation(introduceCube 1.5s ease-out)
 
   .cube
     width: 100%
@@ -194,21 +194,11 @@ body
   100%
     @include transform(rotateZ(360deg))
 
-@include keyframes(openDoor)
-  0%
-    width: 0
-    height: 10px
-  50%
-    width: 300px
-    height: 10px
-  100%
-    height: 250px
-
 @include keyframes(introduceCube)
   0%
     opacity: 0
     top: -20px
-    @include transform(scale(0.8))
+    @include transform(scale(0.6))
   20%
     opacity: 1
   100%
