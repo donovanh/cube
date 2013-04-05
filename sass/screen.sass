@@ -3,18 +3,17 @@
 @import compass/css3
 @import animation
 
-$animationDuration: 30s
+$animationDuration: 10s
 $maxOpacity: 0.9
 
+body
+  background-color: #2c3035
+
 .background
-  background-color: #333
-  @include background(linear-gradient(top, #000, #444))
   width: 600px
   height: 500px
   margin: 100px auto
   position: relative
-  border: 1px solid #444
-  @include border-radius(2px)
 
 
 .object-container
@@ -81,6 +80,7 @@ $maxOpacity: 0.9
     @include transform(rotateX(-90deg) translateZ(150px))
     @include box-shadow(0 10px 100px #000)
     @include backface-visibility(visible)
+    background-color: rgba(0,0,0,0)
   .left
     background-color: #52ff73
     @include transform(rotateY(-90deg) translateZ(150px))
