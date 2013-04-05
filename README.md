@@ -1,4 +1,4 @@
-An animated 3D cube with shading, done using CSS (SASS)and HTML.
+An animated 3D cube with shading, done using CSS (SASS) and HTML.
 
 ## How it should look
 
