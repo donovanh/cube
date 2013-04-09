@@ -41,7 +41,11 @@ body
     @include backface-visibility(hidden)
 
     &:before, &:after
-      content: ""
+      content: "oisin"
+      text-align: center
+      font-size: 120px
+      color: #000
+      line-height: 300px
       display: block
       position: absolute
       width: 100%
@@ -67,7 +71,10 @@ body
     background-color: #fff952
     @include transform(rotateX(90deg) translateZ(150px))
     overflow: hidden
+    &:before
+      content: " " !important
     &:after
+      content: " " !important
       opacity: 1
       width: 200%
       height: 200%
