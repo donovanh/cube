@@ -32,6 +32,7 @@ sup
   @include perspective-origin(50% -240px)
   @include animation(introduceCube 1.5s ease-out)
 
+
   .cube-positioning
     width: 100%
     height: 100%
@@ -64,7 +65,7 @@ sup
     position: absolute
     @include backface-visibility(hidden)
     overflow: hidden
-    -webkit-box-reflect: below 5px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(RGBA(0,0,0,0.1)))
+    -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(RGBA(0,0,0,0.1)))
 
     &:before, &:after
       content: ""
@@ -108,7 +109,7 @@ sup
 
   .bottom
     @include transform(rotateX(-90deg) translateZ(150px))
-    @include box-shadow(0 10px 100px #000)
+    @include box-shadow(0 10px 100px rgba(0,0,0,0.7))
     @include backface-visibility(visible)
     background-color: rgba(0,0,0,0)
     -webkit-box-reflect: none
