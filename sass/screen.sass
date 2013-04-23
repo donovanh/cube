@@ -3,11 +3,11 @@
 @import compass/css3
 @import animation
 
-$animationDuration: 40s
-$maxOpacity: 0.8
+$animationDuration: 20s
+$maxOpacity: 0.6
 
 body
-  background-color: #2c3035
+  background-color: #eee
 
 .background
   width: 600px
@@ -102,7 +102,7 @@ sup
       height: 200%
       margin-left: -50%
       margin-top: -50%
-      @include background(radial-gradient(bottom, rgba(0,0,0,0), #000))
+      @include background(radial-gradient(bottom, rgba(0,0,0,0), rgba(100,100,100,0.4)))
       @include animation(rotateTop $animationDuration infinite linear)
 
   .bottom

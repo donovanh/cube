@@ -65,7 +65,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 9, ../sass/screen.sass */
 body {
-  background-color: #2c3035;
+  background-color: #eeeeee;
 }
 
 /* line 12, ../sass/screen.sass */
@@ -156,11 +156,11 @@ sup {
   -ms-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -webkit-animation: rotate 40s infinite linear;
-  -moz-animation: rotate 40s infinite linear;
-  -ms-animation: rotate 40s infinite linear;
-  -o-animation: rotate 40s infinite linear;
-  animation: rotate 40s infinite linear;
+  -webkit-animation: rotate 20s infinite linear;
+  -moz-animation: rotate 20s infinite linear;
+  -ms-animation: rotate 20s infinite linear;
+  -o-animation: rotate 20s infinite linear;
+  animation: rotate 20s infinite linear;
 }
 /* line 56, ../sass/screen.sass */
 .scene figure {
@@ -226,11 +226,11 @@ sup {
   background: -moz-radial-gradient(top right, rgba(20, 20, 20, 0.5), #000000);
   background: -o-radial-gradient(top right, rgba(20, 20, 20, 0.5), #000000);
   background: radial-gradient(top right, rgba(20, 20, 20, 0.5), #000000);
-  -webkit-animation: backShading1 40s infinite linear;
-  -moz-animation: backShading1 40s infinite linear;
-  -ms-animation: backShading1 40s infinite linear;
-  -o-animation: backShading1 40s infinite linear;
-  animation: backShading1 40s infinite linear;
+  -webkit-animation: backShading1 20s infinite linear;
+  -moz-animation: backShading1 20s infinite linear;
+  -ms-animation: backShading1 20s infinite linear;
+  -o-animation: backShading1 20s infinite linear;
+  animation: backShading1 20s infinite linear;
 }
 /* line 90, ../sass/screen.sass */
 .scene .back:after {
@@ -239,11 +239,11 @@ sup {
   background: -moz-radial-gradient(bottom right, #000000, rgba(20, 20, 20, 0.5));
   background: -o-radial-gradient(bottom right, #000000, rgba(20, 20, 20, 0.5));
   background: radial-gradient(bottom right, #000000, rgba(20, 20, 20, 0.5));
-  -webkit-animation: backShading2 40s infinite linear;
-  -moz-animation: backShading2 40s infinite linear;
-  -ms-animation: backShading2 40s infinite linear;
-  -o-animation: backShading2 40s infinite linear;
-  animation: backShading2 40s infinite linear;
+  -webkit-animation: backShading2 20s infinite linear;
+  -moz-animation: backShading2 20s infinite linear;
+  -ms-animation: backShading2 20s infinite linear;
+  -o-animation: backShading2 20s infinite linear;
+  animation: backShading2 20s infinite linear;
 }
 /* line 93, ../sass/screen.sass */
 .scene .top {
@@ -263,16 +263,16 @@ sup {
   height: 200%;
   margin-left: -50%;
   margin-top: -50%;
-  background: -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, #000000));
-  background: -webkit-radial-gradient(bottom, rgba(0, 0, 0, 0), #000000);
-  background: -moz-radial-gradient(bottom, rgba(0, 0, 0, 0), #000000);
-  background: -o-radial-gradient(bottom, rgba(0, 0, 0, 0), #000000);
-  background: radial-gradient(bottom, rgba(0, 0, 0, 0), #000000);
-  -webkit-animation: rotateTop 40s infinite linear;
-  -moz-animation: rotateTop 40s infinite linear;
-  -ms-animation: rotateTop 40s infinite linear;
-  -o-animation: rotateTop 40s infinite linear;
-  animation: rotateTop 40s infinite linear;
+  background: -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(100, 100, 100, 0.4)));
+  background: -webkit-radial-gradient(bottom, rgba(0, 0, 0, 0), rgba(100, 100, 100, 0.4));
+  background: -moz-radial-gradient(bottom, rgba(0, 0, 0, 0), rgba(100, 100, 100, 0.4));
+  background: -o-radial-gradient(bottom, rgba(0, 0, 0, 0), rgba(100, 100, 100, 0.4));
+  background: radial-gradient(bottom, rgba(0, 0, 0, 0), rgba(100, 100, 100, 0.4));
+  -webkit-animation: rotateTop 20s infinite linear;
+  -moz-animation: rotateTop 20s infinite linear;
+  -ms-animation: rotateTop 20s infinite linear;
+  -o-animation: rotateTop 20s infinite linear;
+  animation: rotateTop 20s infinite linear;
 }
 /* line 108, ../sass/screen.sass */
 .scene .bottom {
@@ -302,19 +302,19 @@ sup {
 }
 /* line 117, ../sass/screen.sass */
 .scene .left:before {
-  -webkit-animation: leftShading1 40s infinite linear;
-  -moz-animation: leftShading1 40s infinite linear;
-  -ms-animation: leftShading1 40s infinite linear;
-  -o-animation: leftShading1 40s infinite linear;
-  animation: leftShading1 40s infinite linear;
+  -webkit-animation: leftShading1 20s infinite linear;
+  -moz-animation: leftShading1 20s infinite linear;
+  -ms-animation: leftShading1 20s infinite linear;
+  -o-animation: leftShading1 20s infinite linear;
+  animation: leftShading1 20s infinite linear;
 }
 /* line 119, ../sass/screen.sass */
 .scene .left:after {
-  -webkit-animation: leftShading2 40s infinite linear;
-  -moz-animation: leftShading2 40s infinite linear;
-  -ms-animation: leftShading2 40s infinite linear;
-  -o-animation: leftShading2 40s infinite linear;
-  animation: leftShading2 40s infinite linear;
+  -webkit-animation: leftShading2 20s infinite linear;
+  -moz-animation: leftShading2 20s infinite linear;
+  -ms-animation: leftShading2 20s infinite linear;
+  -o-animation: leftShading2 20s infinite linear;
+  animation: leftShading2 20s infinite linear;
 }
 /* line 121, ../sass/screen.sass */
 .scene .right {
@@ -326,19 +326,19 @@ sup {
 }
 /* line 123, ../sass/screen.sass */
 .scene .right:before {
-  -webkit-animation: rightShading1 40s infinite linear;
-  -moz-animation: rightShading1 40s infinite linear;
-  -ms-animation: rightShading1 40s infinite linear;
-  -o-animation: rightShading1 40s infinite linear;
-  animation: rightShading1 40s infinite linear;
+  -webkit-animation: rightShading1 20s infinite linear;
+  -moz-animation: rightShading1 20s infinite linear;
+  -ms-animation: rightShading1 20s infinite linear;
+  -o-animation: rightShading1 20s infinite linear;
+  animation: rightShading1 20s infinite linear;
 }
 /* line 125, ../sass/screen.sass */
 .scene .right:after {
-  -webkit-animation: rightShading2 40s infinite linear;
-  -moz-animation: rightShading2 40s infinite linear;
-  -ms-animation: rightShading2 40s infinite linear;
-  -o-animation: rightShading2 40s infinite linear;
-  animation: rightShading2 40s infinite linear;
+  -webkit-animation: rightShading2 20s infinite linear;
+  -moz-animation: rightShading2 20s infinite linear;
+  -ms-animation: rightShading2 20s infinite linear;
+  -o-animation: rightShading2 20s infinite linear;
+  animation: rightShading2 20s infinite linear;
 }
 /* line 127, ../sass/screen.sass */
 .scene .front {
@@ -350,19 +350,19 @@ sup {
 }
 /* line 129, ../sass/screen.sass */
 .scene .front:before {
-  -webkit-animation: frontShading1 40s infinite linear;
-  -moz-animation: frontShading1 40s infinite linear;
-  -ms-animation: frontShading1 40s infinite linear;
-  -o-animation: frontShading1 40s infinite linear;
-  animation: frontShading1 40s infinite linear;
+  -webkit-animation: frontShading1 20s infinite linear;
+  -moz-animation: frontShading1 20s infinite linear;
+  -ms-animation: frontShading1 20s infinite linear;
+  -o-animation: frontShading1 20s infinite linear;
+  animation: frontShading1 20s infinite linear;
 }
 /* line 131, ../sass/screen.sass */
 .scene .front:after {
-  -webkit-animation: frontShading2 40s infinite linear;
-  -moz-animation: frontShading2 40s infinite linear;
-  -ms-animation: frontShading2 40s infinite linear;
-  -o-animation: frontShading2 40s infinite linear;
-  animation: frontShading2 40s infinite linear;
+  -webkit-animation: frontShading2 20s infinite linear;
+  -moz-animation: frontShading2 20s infinite linear;
+  -ms-animation: frontShading2 20s infinite linear;
+  -o-animation: frontShading2 20s infinite linear;
+  animation: frontShading2 20s infinite linear;
 }
 
 @-moz-keyframes rotate {
@@ -441,12 +441,12 @@ sup {
 
   /* line 144, ../sass/screen.sass */
   25% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 146, ../sass/screen.sass */
   35% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 148, ../sass/screen.sass */
@@ -463,12 +463,12 @@ sup {
 
   /* line 144, ../sass/screen.sass */
   25% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 146, ../sass/screen.sass */
   35% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 148, ../sass/screen.sass */
@@ -485,12 +485,12 @@ sup {
 
   /* line 144, ../sass/screen.sass */
   25% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 146, ../sass/screen.sass */
   35% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 148, ../sass/screen.sass */
@@ -507,12 +507,12 @@ sup {
 
   /* line 144, ../sass/screen.sass */
   25% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 146, ../sass/screen.sass */
   35% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 148, ../sass/screen.sass */
@@ -529,12 +529,12 @@ sup {
 
   /* line 144, ../sass/screen.sass */
   25% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 146, ../sass/screen.sass */
   35% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 148, ../sass/screen.sass */
@@ -551,12 +551,12 @@ sup {
 
   /* line 154, ../sass/screen.sass */
   60% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 156, ../sass/screen.sass */
   75% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 158, ../sass/screen.sass */
@@ -573,12 +573,12 @@ sup {
 
   /* line 154, ../sass/screen.sass */
   60% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 156, ../sass/screen.sass */
   75% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 158, ../sass/screen.sass */
@@ -595,12 +595,12 @@ sup {
 
   /* line 154, ../sass/screen.sass */
   60% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 156, ../sass/screen.sass */
   75% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 158, ../sass/screen.sass */
@@ -617,12 +617,12 @@ sup {
 
   /* line 154, ../sass/screen.sass */
   60% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 156, ../sass/screen.sass */
   75% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 158, ../sass/screen.sass */
@@ -639,12 +639,12 @@ sup {
 
   /* line 154, ../sass/screen.sass */
   60% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 156, ../sass/screen.sass */
   75% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 158, ../sass/screen.sass */
@@ -656,7 +656,7 @@ sup {
 @-moz-keyframes backShading1 {
   /* line 162, ../sass/screen.sass */
   25% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 164, ../sass/screen.sass */
@@ -671,14 +671,14 @@ sup {
 
   /* line 168, ../sass/screen.sass */
   80% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
 @-webkit-keyframes backShading1 {
   /* line 162, ../sass/screen.sass */
   25% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 164, ../sass/screen.sass */
@@ -693,14 +693,14 @@ sup {
 
   /* line 168, ../sass/screen.sass */
   80% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
 @-o-keyframes backShading1 {
   /* line 162, ../sass/screen.sass */
   25% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 164, ../sass/screen.sass */
@@ -715,14 +715,14 @@ sup {
 
   /* line 168, ../sass/screen.sass */
   80% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
 @-ms-keyframes backShading1 {
   /* line 162, ../sass/screen.sass */
   25% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 164, ../sass/screen.sass */
@@ -737,14 +737,14 @@ sup {
 
   /* line 168, ../sass/screen.sass */
   80% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
 @keyframes backShading1 {
   /* line 162, ../sass/screen.sass */
   25% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 164, ../sass/screen.sass */
@@ -759,7 +759,7 @@ sup {
 
   /* line 168, ../sass/screen.sass */
   80% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
@@ -776,12 +776,12 @@ sup {
 
   /* line 176, ../sass/screen.sass */
   75% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 178, ../sass/screen.sass */
   80% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
@@ -798,12 +798,12 @@ sup {
 
   /* line 176, ../sass/screen.sass */
   75% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 178, ../sass/screen.sass */
   80% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
@@ -820,12 +820,12 @@ sup {
 
   /* line 176, ../sass/screen.sass */
   75% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 178, ../sass/screen.sass */
   80% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
@@ -842,12 +842,12 @@ sup {
 
   /* line 176, ../sass/screen.sass */
   75% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 178, ../sass/screen.sass */
   80% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
@@ -864,12 +864,12 @@ sup {
 
   /* line 176, ../sass/screen.sass */
   75% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 178, ../sass/screen.sass */
   80% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
@@ -886,12 +886,12 @@ sup {
 
   /* line 186, ../sass/screen.sass */
   50% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 188, ../sass/screen.sass */
   60% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
@@ -908,12 +908,12 @@ sup {
 
   /* line 186, ../sass/screen.sass */
   50% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 188, ../sass/screen.sass */
   60% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
@@ -930,12 +930,12 @@ sup {
 
   /* line 186, ../sass/screen.sass */
   50% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 188, ../sass/screen.sass */
   60% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
@@ -952,12 +952,12 @@ sup {
 
   /* line 186, ../sass/screen.sass */
   50% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 188, ../sass/screen.sass */
   60% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
@@ -974,19 +974,19 @@ sup {
 
   /* line 186, ../sass/screen.sass */
   50% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 188, ../sass/screen.sass */
   60% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
 @-moz-keyframes leftShading2 {
   /* line 192, ../sass/screen.sass */
   0% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 194, ../sass/screen.sass */
@@ -1001,14 +1001,14 @@ sup {
 
   /* line 198, ../sass/screen.sass */
   100% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
 @-webkit-keyframes leftShading2 {
   /* line 192, ../sass/screen.sass */
   0% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 194, ../sass/screen.sass */
@@ -1023,14 +1023,14 @@ sup {
 
   /* line 198, ../sass/screen.sass */
   100% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
 @-o-keyframes leftShading2 {
   /* line 192, ../sass/screen.sass */
   0% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 194, ../sass/screen.sass */
@@ -1045,14 +1045,14 @@ sup {
 
   /* line 198, ../sass/screen.sass */
   100% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
 @-ms-keyframes leftShading2 {
   /* line 192, ../sass/screen.sass */
   0% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 194, ../sass/screen.sass */
@@ -1067,14 +1067,14 @@ sup {
 
   /* line 198, ../sass/screen.sass */
   100% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
 @keyframes leftShading2 {
   /* line 192, ../sass/screen.sass */
   0% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 194, ../sass/screen.sass */
@@ -1089,14 +1089,14 @@ sup {
 
   /* line 198, ../sass/screen.sass */
   100% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
 @-moz-keyframes rightShading2 {
   /* line 202, ../sass/screen.sass */
   50% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 204, ../sass/screen.sass */
@@ -1113,7 +1113,7 @@ sup {
 @-webkit-keyframes rightShading2 {
   /* line 202, ../sass/screen.sass */
   50% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 204, ../sass/screen.sass */
@@ -1130,7 +1130,7 @@ sup {
 @-o-keyframes rightShading2 {
   /* line 202, ../sass/screen.sass */
   50% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 204, ../sass/screen.sass */
@@ -1147,7 +1147,7 @@ sup {
 @-ms-keyframes rightShading2 {
   /* line 202, ../sass/screen.sass */
   50% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 204, ../sass/screen.sass */
@@ -1164,7 +1164,7 @@ sup {
 @keyframes rightShading2 {
   /* line 202, ../sass/screen.sass */
   50% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 204, ../sass/screen.sass */
@@ -1181,7 +1181,7 @@ sup {
 @-moz-keyframes rightShading1 {
   /* line 210, ../sass/screen.sass */
   10% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 212, ../sass/screen.sass */
@@ -1196,14 +1196,14 @@ sup {
 
   /* line 216, ../sass/screen.sass */
   100% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
 @-webkit-keyframes rightShading1 {
   /* line 210, ../sass/screen.sass */
   10% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 212, ../sass/screen.sass */
@@ -1218,14 +1218,14 @@ sup {
 
   /* line 216, ../sass/screen.sass */
   100% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
 @-o-keyframes rightShading1 {
   /* line 210, ../sass/screen.sass */
   10% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 212, ../sass/screen.sass */
@@ -1240,14 +1240,14 @@ sup {
 
   /* line 216, ../sass/screen.sass */
   100% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
 @-ms-keyframes rightShading1 {
   /* line 210, ../sass/screen.sass */
   10% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 212, ../sass/screen.sass */
@@ -1262,14 +1262,14 @@ sup {
 
   /* line 216, ../sass/screen.sass */
   100% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
 @keyframes rightShading1 {
   /* line 210, ../sass/screen.sass */
   10% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 
   /* line 212, ../sass/screen.sass */
@@ -1284,7 +1284,7 @@ sup {
 
   /* line 216, ../sass/screen.sass */
   100% {
-    opacity: 0.8;
+    opacity: 0.6;
   }
 }
 
