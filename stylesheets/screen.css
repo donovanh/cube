@@ -92,7 +92,7 @@ sup {
 }
 
 /* line 27, ../sass/screen.sass */
-.object-container {
+.scene {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -113,7 +113,7 @@ sup {
   animation: introduceCube 1.5s ease-out;
 }
 /* line 35, ../sass/screen.sass */
-.object-container .cube-positioning {
+.scene .cube-positioning {
   width: 100%;
   height: 100%;
   -webkit-transform-style: preserve-3d;
@@ -124,25 +124,25 @@ sup {
   position: absolute;
 }
 /* line 41, ../sass/screen.sass */
-.object-container .cube-positioning.one {
-  -webkit-transform: translateZ(100px) translateX(-50px);
-  -moz-transform: translateZ(100px) translateX(-50px);
-  -ms-transform: translateZ(100px) translateX(-50px);
-  -o-transform: translateZ(100px) translateX(-50px);
-  transform: translateZ(100px) translateX(-50px);
+.scene .cube-positioning.one {
+  -webkit-transform: translateZ(100px) translateX(-50px) rotateZ(-5deg);
+  -moz-transform: translateZ(100px) translateX(-50px) rotateZ(-5deg);
+  -ms-transform: translateZ(100px) translateX(-50px) rotateZ(-5deg);
+  -o-transform: translateZ(100px) translateX(-50px) rotateZ(-5deg);
+  transform: translateZ(100px) translateX(-50px) rotateZ(-5deg);
   z-index: 10;
 }
 /* line 45, ../sass/screen.sass */
-.object-container .cube-positioning.two {
-  -webkit-transform: translateZ(-500px) translateX(500px);
-  -moz-transform: translateZ(-500px) translateX(500px);
-  -ms-transform: translateZ(-500px) translateX(500px);
-  -o-transform: translateZ(-500px) translateX(500px);
-  transform: translateZ(-500px) translateX(500px);
+.scene .cube-positioning.two {
+  -webkit-transform: translateZ(-500px) translateX(500px) rotateZ(-3deg);
+  -moz-transform: translateZ(-500px) translateX(500px) rotateZ(-3deg);
+  -ms-transform: translateZ(-500px) translateX(500px) rotateZ(-3deg);
+  -o-transform: translateZ(-500px) translateX(500px) rotateZ(-3deg);
+  transform: translateZ(-500px) translateX(500px) rotateZ(-3deg);
   z-index: 5;
 }
 /* line 49, ../sass/screen.sass */
-.object-container .cube-positioning.three {
+.scene .cube-positioning.three {
   -webkit-transform: translateZ(-1800px) translateX(-400px);
   -moz-transform: translateZ(-1800px) translateX(-400px);
   -ms-transform: translateZ(-1800px) translateX(-400px);
@@ -150,7 +150,7 @@ sup {
   transform: translateZ(-1800px) translateX(-400px);
 }
 /* line 52, ../sass/screen.sass */
-.object-container .cube {
+.scene .cube {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
@@ -163,7 +163,7 @@ sup {
   animation: rotate 40s infinite linear;
 }
 /* line 56, ../sass/screen.sass */
-.object-container figure {
+.scene figure {
   display: block;
   width: 300px;
   height: 300px;
@@ -185,7 +185,7 @@ sup {
   -webkit-box-reflect: below 15px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(RGBA(0, 0, 0, 0.2)));
 }
 /* line 69, ../sass/screen.sass */
-.object-container figure:before, .object-container figure:after {
+.scene figure:before, .scene figure:after {
   content: "";
   display: block;
   position: absolute;
@@ -194,7 +194,7 @@ sup {
   opacity: 0;
 }
 /* line 77, ../sass/screen.sass */
-.object-container figure:before {
+.scene figure:before {
   background: -webkit-gradient(radial, 0% 0%, 0, 0% 0%, 100, color-stop(0%, rgba(20, 20, 20, 0.5)), color-stop(100%, #000000));
   background: -webkit-radial-gradient(top left, rgba(20, 20, 20, 0.5), #000000);
   background: -moz-radial-gradient(top left, rgba(20, 20, 20, 0.5), #000000);
@@ -203,7 +203,7 @@ sup {
   z-index: 10;
 }
 /* line 81, ../sass/screen.sass */
-.object-container figure:after {
+.scene figure:after {
   background: -webkit-gradient(radial, 0% 100%, 0, 0% 100%, 100, color-stop(0%, #000000), color-stop(100%, rgba(20, 20, 20, 0.5)));
   background: -webkit-radial-gradient(bottom left, #000000, rgba(20, 20, 20, 0.5));
   background: -moz-radial-gradient(bottom left, #000000, rgba(20, 20, 20, 0.5));
@@ -212,7 +212,7 @@ sup {
   z-index: 10;
 }
 /* line 85, ../sass/screen.sass */
-.object-container .back {
+.scene .back {
   -webkit-transform: rotateY(180deg) translateZ(150px);
   -moz-transform: rotateY(180deg) translateZ(150px);
   -ms-transform: rotateY(180deg) translateZ(150px);
@@ -220,7 +220,7 @@ sup {
   transform: rotateY(180deg) translateZ(150px);
 }
 /* line 87, ../sass/screen.sass */
-.object-container .back:before {
+.scene .back:before {
   background: -webkit-gradient(radial, 100% 0%, 0, 100% 0%, 100, color-stop(0%, rgba(20, 20, 20, 0.5)), color-stop(100%, #000000));
   background: -webkit-radial-gradient(top right, rgba(20, 20, 20, 0.5), #000000);
   background: -moz-radial-gradient(top right, rgba(20, 20, 20, 0.5), #000000);
@@ -233,7 +233,7 @@ sup {
   animation: backShading1 40s infinite linear;
 }
 /* line 90, ../sass/screen.sass */
-.object-container .back:after {
+.scene .back:after {
   background: -webkit-gradient(radial, 100% 100%, 0, 100% 100%, 100, color-stop(0%, #000000), color-stop(100%, rgba(20, 20, 20, 0.5)));
   background: -webkit-radial-gradient(bottom right, #000000, rgba(20, 20, 20, 0.5));
   background: -moz-radial-gradient(bottom right, #000000, rgba(20, 20, 20, 0.5));
@@ -246,8 +246,8 @@ sup {
   animation: backShading2 40s infinite linear;
 }
 /* line 93, ../sass/screen.sass */
-.object-container .top {
-  background-color: #f37140;
+.scene .top {
+  background-color: #ff7a47;
   -webkit-transform: rotateX(90deg) translateZ(150px);
   -moz-transform: rotateX(90deg) translateZ(150px);
   -ms-transform: rotateX(90deg) translateZ(150px);
@@ -257,7 +257,7 @@ sup {
   -webkit-box-reflect: none;
 }
 /* line 99, ../sass/screen.sass */
-.object-container .top:after {
+.scene .top:after {
   opacity: 1;
   width: 200%;
   height: 200%;
@@ -275,7 +275,7 @@ sup {
   animation: rotateTop 40s infinite linear;
 }
 /* line 108, ../sass/screen.sass */
-.object-container .bottom {
+.scene .bottom {
   -webkit-transform: rotateX(-90deg) translateZ(150px);
   -moz-transform: rotateX(-90deg) translateZ(150px);
   -ms-transform: rotateX(-90deg) translateZ(150px);
@@ -293,7 +293,7 @@ sup {
   -webkit-box-reflect: none;
 }
 /* line 115, ../sass/screen.sass */
-.object-container .left {
+.scene .left {
   -webkit-transform: rotateY(-90deg) translateZ(150px);
   -moz-transform: rotateY(-90deg) translateZ(150px);
   -ms-transform: rotateY(-90deg) translateZ(150px);
@@ -301,7 +301,7 @@ sup {
   transform: rotateY(-90deg) translateZ(150px);
 }
 /* line 117, ../sass/screen.sass */
-.object-container .left:before {
+.scene .left:before {
   -webkit-animation: leftShading1 40s infinite linear;
   -moz-animation: leftShading1 40s infinite linear;
   -ms-animation: leftShading1 40s infinite linear;
@@ -309,7 +309,7 @@ sup {
   animation: leftShading1 40s infinite linear;
 }
 /* line 119, ../sass/screen.sass */
-.object-container .left:after {
+.scene .left:after {
   -webkit-animation: leftShading2 40s infinite linear;
   -moz-animation: leftShading2 40s infinite linear;
   -ms-animation: leftShading2 40s infinite linear;
@@ -317,7 +317,7 @@ sup {
   animation: leftShading2 40s infinite linear;
 }
 /* line 121, ../sass/screen.sass */
-.object-container .right {
+.scene .right {
   -webkit-transform: rotateY(90deg) translateZ(150px);
   -moz-transform: rotateY(90deg) translateZ(150px);
   -ms-transform: rotateY(90deg) translateZ(150px);
@@ -325,7 +325,7 @@ sup {
   transform: rotateY(90deg) translateZ(150px);
 }
 /* line 123, ../sass/screen.sass */
-.object-container .right:before {
+.scene .right:before {
   -webkit-animation: rightShading1 40s infinite linear;
   -moz-animation: rightShading1 40s infinite linear;
   -ms-animation: rightShading1 40s infinite linear;
@@ -333,7 +333,7 @@ sup {
   animation: rightShading1 40s infinite linear;
 }
 /* line 125, ../sass/screen.sass */
-.object-container .right:after {
+.scene .right:after {
   -webkit-animation: rightShading2 40s infinite linear;
   -moz-animation: rightShading2 40s infinite linear;
   -ms-animation: rightShading2 40s infinite linear;
@@ -341,7 +341,7 @@ sup {
   animation: rightShading2 40s infinite linear;
 }
 /* line 127, ../sass/screen.sass */
-.object-container .front {
+.scene .front {
   -webkit-transform: translateZ(150px);
   -moz-transform: translateZ(150px);
   -ms-transform: translateZ(150px);
@@ -349,7 +349,7 @@ sup {
   transform: translateZ(150px);
 }
 /* line 129, ../sass/screen.sass */
-.object-container .front:before {
+.scene .front:before {
   -webkit-animation: frontShading1 40s infinite linear;
   -moz-animation: frontShading1 40s infinite linear;
   -ms-animation: frontShading1 40s infinite linear;
@@ -357,7 +357,7 @@ sup {
   animation: frontShading1 40s infinite linear;
 }
 /* line 131, ../sass/screen.sass */
-.object-container .front:after {
+.scene .front:after {
   -webkit-animation: frontShading2 40s infinite linear;
   -moz-animation: frontShading2 40s infinite linear;
   -ms-animation: frontShading2 40s infinite linear;
