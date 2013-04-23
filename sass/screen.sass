@@ -3,8 +3,8 @@
 @import compass/css3
 @import animation
 
-$animationDuration: 20s
-$maxOpacity: 0.6
+$animationDuration: 10s
+$maxOpacity: 0.8
 
 body
   background-color: #eee
@@ -60,7 +60,7 @@ sup
     left: 150px
     top: 150px
     background-color: #ddd
-    @include background(linear-gradient(#f37140 0%, #f37541 30%, #ef4834 100%))
+    @include background(linear-gradient(#f37140 0%, #f37541 30%, #ef4834 50%))
     position: absolute
     @include backface-visibility(hidden)
     overflow: hidden
@@ -91,19 +91,20 @@ sup
       @include background(radial-gradient(bottom right, #000, rgba(20,20,20,0.5)))
       @include animation(backShading2 $animationDuration infinite linear)
   .top
-    background-color: #ff7a47
+    background: #ff7a47
     @include transform(rotateX(90deg) translateZ(150px))
-    overflow: hidden
     -webkit-box-reflect: none
 
     &:after
-      opacity: 1
+      content: " "
+      opacity: 0.5
       width: 200%
       height: 200%
       margin-left: -50%
       margin-top: -50%
-      @include background(radial-gradient(bottom, rgba(0,0,0,0), rgba(100,100,100,0.4)))
+      @include background(radial-gradient(bottom, rgba(0,0,0,0), #000))
       @include animation(rotateTop $animationDuration infinite linear)
+
 
   .bottom
     @include transform(rotateX(-90deg) translateZ(150px))
