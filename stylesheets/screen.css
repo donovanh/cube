@@ -182,7 +182,7 @@ sup {
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
   overflow: hidden;
-  -webkit-box-reflect: below 15px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(RGBA(0, 0, 0, 0.2)));
+  -webkit-box-reflect: below 5px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(RGBA(0, 0, 0, 0.1)));
 }
 /* line 69, ../sass/screen.sass */
 .scene figure:before, .scene figure:after {
