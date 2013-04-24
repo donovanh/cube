@@ -32,13 +32,16 @@ sup
   @include perspective-origin(50% -240px)
   @include animation(introduceCube 1.5s ease-out)
 
+  .cube
+    @include transform-style(preserve-3d)
+    @include animation(rotate $animationDuration infinite linear)
 
   .cube-positioning
     width: 100%
     height: 100%
     @include transform-style(preserve-3d)
     position: absolute
-    
+
     &.one
       @include transform(translateZ(100px) translateX(-50px) rotateZ(-5deg))
       z-index: 10
@@ -50,9 +53,10 @@ sup
     &.three
       @include transform(translateZ(-1800px) translateX(-400px))
 
-  .cube
-    @include transform-style(preserve-3d)
-    @include animation(rotate $animationDuration infinite linear)
+      .cube
+        -webkit-transform-origin: -100px
+
+  
 
   figure
     display: block
