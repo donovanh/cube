@@ -4,7 +4,7 @@
 @import animation
 
 $animationDuration: 20s
-$maxOpacity: 0.8
+$maxOpacity: 0.9
 
 body
   background-color: #eee
@@ -96,6 +96,7 @@ body
     @include transform(rotateY(180deg) translateZ(150px))
 
   .top
+    background-color: #fff952
     @include transform(rotateX(90deg) translateZ(150px))
     background-image: none
     -webkit-box-reflect: none
@@ -119,18 +120,21 @@ body
     -webkit-box-reflect: none
 
   .left
+    background-color: #52ff73
     @include transform(rotateY(-90deg) translateZ(150px))
     &:before
       @include animation(leftShading1 $animationDuration infinite linear)
     &:after
       @include animation(leftShading2 $animationDuration infinite linear)
   .right
+    background-color: #ff5262
     @include transform(rotateY(90deg) translateZ(150px))
     &:before
       @include animation(rightShading1 $animationDuration infinite linear)
     &:after
       @include animation(rightShading2 $animationDuration infinite linear)
   .front
+    background-color: #60c2ef
     @include transform(translateZ(150px))
     &:before
       @include animation(frontShading1 $animationDuration infinite linear)

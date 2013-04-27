@@ -200,6 +200,7 @@ body {
   transform: rotateY(180deg) translateZ(150px);
 }
 .stage .top {
+  background-color: #fff952;
   -webkit-transform: rotateX(90deg) translateZ(150px);
   -moz-transform: rotateX(90deg) translateZ(150px);
   -ms-transform: rotateX(90deg) translateZ(150px);
@@ -244,6 +245,7 @@ body {
   -webkit-box-reflect: none;
 }
 .stage .left {
+  background-color: #52ff73;
   -webkit-transform: rotateY(-90deg) translateZ(150px);
   -moz-transform: rotateY(-90deg) translateZ(150px);
   -ms-transform: rotateY(-90deg) translateZ(150px);
@@ -265,6 +267,7 @@ body {
   animation: leftShading2 20s infinite linear;
 }
 .stage .right {
+  background-color: #ff5262;
   -webkit-transform: rotateY(90deg) translateZ(150px);
   -moz-transform: rotateY(90deg) translateZ(150px);
   -ms-transform: rotateY(90deg) translateZ(150px);
@@ -286,6 +289,7 @@ body {
   animation: rightShading2 20s infinite linear;
 }
 .stage .front {
+  background-color: #60c2ef;
   -webkit-transform: translateZ(150px);
   -moz-transform: translateZ(150px);
   -ms-transform: translateZ(150px);
@@ -371,11 +375,11 @@ body {
   }
 
   25% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   35% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   50% {
@@ -389,11 +393,11 @@ body {
   }
 
   25% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   35% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   50% {
@@ -407,11 +411,11 @@ body {
   }
 
   25% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   35% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   50% {
@@ -425,11 +429,11 @@ body {
   }
 
   25% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   35% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   50% {
@@ -443,11 +447,11 @@ body {
   }
 
   25% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   35% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   50% {
@@ -461,11 +465,11 @@ body {
   }
 
   60% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   75% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   100% {
@@ -479,11 +483,11 @@ body {
   }
 
   60% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   75% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   100% {
@@ -497,11 +501,11 @@ body {
   }
 
   60% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   75% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   100% {
@@ -515,11 +519,11 @@ body {
   }
 
   60% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   75% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   100% {
@@ -533,11 +537,11 @@ body {
   }
 
   60% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   75% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   100% {
@@ -547,7 +551,7 @@ body {
 
 @-moz-keyframes backShading1 {
   25% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   50% {
@@ -559,13 +563,13 @@ body {
   }
 
   80% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
 @-webkit-keyframes backShading1 {
   25% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   50% {
@@ -577,13 +581,13 @@ body {
   }
 
   80% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
 @-o-keyframes backShading1 {
   25% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   50% {
@@ -595,13 +599,13 @@ body {
   }
 
   80% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
 @-ms-keyframes backShading1 {
   25% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   50% {
@@ -613,13 +617,13 @@ body {
   }
 
   80% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
 @keyframes backShading1 {
   25% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   50% {
@@ -631,7 +635,7 @@ body {
   }
 
   80% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
@@ -645,11 +649,11 @@ body {
   }
 
   75% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   80% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
@@ -663,11 +667,11 @@ body {
   }
 
   75% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   80% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
@@ -681,11 +685,11 @@ body {
   }
 
   75% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   80% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
@@ -699,11 +703,11 @@ body {
   }
 
   75% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   80% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
@@ -717,11 +721,11 @@ body {
   }
 
   75% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   80% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
@@ -735,11 +739,11 @@ body {
   }
 
   50% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   60% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
@@ -753,11 +757,11 @@ body {
   }
 
   50% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   60% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
@@ -771,11 +775,11 @@ body {
   }
 
   50% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   60% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
@@ -789,11 +793,11 @@ body {
   }
 
   50% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   60% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
@@ -807,17 +811,17 @@ body {
   }
 
   50% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   60% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
 @-moz-keyframes leftShading2 {
   0% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   25% {
@@ -829,13 +833,13 @@ body {
   }
 
   100% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
 @-webkit-keyframes leftShading2 {
   0% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   25% {
@@ -847,13 +851,13 @@ body {
   }
 
   100% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
 @-o-keyframes leftShading2 {
   0% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   25% {
@@ -865,13 +869,13 @@ body {
   }
 
   100% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
 @-ms-keyframes leftShading2 {
   0% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   25% {
@@ -883,13 +887,13 @@ body {
   }
 
   100% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
 @keyframes leftShading2 {
   0% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   25% {
@@ -901,13 +905,13 @@ body {
   }
 
   100% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
 @-moz-keyframes rightShading2 {
   50% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   75% {
@@ -921,7 +925,7 @@ body {
 
 @-webkit-keyframes rightShading2 {
   50% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   75% {
@@ -935,7 +939,7 @@ body {
 
 @-o-keyframes rightShading2 {
   50% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   75% {
@@ -949,7 +953,7 @@ body {
 
 @-ms-keyframes rightShading2 {
   50% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   75% {
@@ -963,7 +967,7 @@ body {
 
 @keyframes rightShading2 {
   50% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   75% {
@@ -977,7 +981,7 @@ body {
 
 @-moz-keyframes rightShading1 {
   10% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   50% {
@@ -989,13 +993,13 @@ body {
   }
 
   100% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
 @-webkit-keyframes rightShading1 {
   10% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   50% {
@@ -1007,13 +1011,13 @@ body {
   }
 
   100% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
 @-o-keyframes rightShading1 {
   10% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   50% {
@@ -1025,13 +1029,13 @@ body {
   }
 
   100% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
 @-ms-keyframes rightShading1 {
   10% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   50% {
@@ -1043,13 +1047,13 @@ body {
   }
 
   100% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
 @keyframes rightShading1 {
   10% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   50% {
@@ -1061,7 +1065,7 @@ body {
   }
 
   100% {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
