@@ -55,7 +55,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-  background-color: #eeeeee;
+  background-color: #666666;
 }
 
 .stage {
@@ -102,19 +102,19 @@ body {
   position: absolute;
 }
 .stage .cube-positioning.one {
-  -webkit-transform: translateZ(100px) translateX(-50px) rotateZ(-5deg);
-  -moz-transform: translateZ(100px) translateX(-50px) rotateZ(-5deg);
-  -ms-transform: translateZ(100px) translateX(-50px) rotateZ(-5deg);
-  -o-transform: translateZ(100px) translateX(-50px) rotateZ(-5deg);
-  transform: translateZ(100px) translateX(-50px) rotateZ(-5deg);
+  -webkit-transform: translateZ(100px) translateX(-50px);
+  -moz-transform: translateZ(100px) translateX(-50px);
+  -ms-transform: translateZ(100px) translateX(-50px);
+  -o-transform: translateZ(100px) translateX(-50px);
+  transform: translateZ(100px) translateX(-50px);
   z-index: 10;
 }
 .stage .cube-positioning.two {
-  -webkit-transform: translateZ(-500px) translateX(500px) rotateZ(-3deg);
-  -moz-transform: translateZ(-500px) translateX(500px) rotateZ(-3deg);
-  -ms-transform: translateZ(-500px) translateX(500px) rotateZ(-3deg);
-  -o-transform: translateZ(-500px) translateX(500px) rotateZ(-3deg);
-  transform: translateZ(-500px) translateX(500px) rotateZ(-3deg);
+  -webkit-transform: translateZ(-500px) translateX(420px);
+  -moz-transform: translateZ(-500px) translateX(420px);
+  -ms-transform: translateZ(-500px) translateX(420px);
+  -o-transform: translateZ(-500px) translateX(420px);
+  transform: translateZ(-500px) translateX(420px);
   z-index: 5;
 }
 .stage .cube-positioning.two figure {
@@ -122,18 +122,19 @@ body {
   background-size: 100%;
 }
 .stage .cube-positioning.three {
-  -webkit-transform: translateZ(-1500px) translateX(-300px);
-  -moz-transform: translateZ(-1500px) translateX(-300px);
-  -ms-transform: translateZ(-1500px) translateX(-300px);
-  -o-transform: translateZ(-1500px) translateX(-300px);
-  transform: translateZ(-1500px) translateX(-300px);
+  -webkit-transform: translateZ(-1000px) translateX(-500px);
+  -moz-transform: translateZ(-1000px) translateX(-500px);
+  -ms-transform: translateZ(-1000px) translateX(-500px);
+  -o-transform: translateZ(-1000px) translateX(-500px);
+  transform: translateZ(-1000px) translateX(-500px);
 }
 .stage .cube-positioning.three figure {
   background-color: #6b522b;
-}
-.stage .cube-positioning.three figure.front, .stage .cube-positioning.three figure.left {
   background-image: repeating-linear-gradient(0deg, transparent, transparent 20px, rgba(255, 255, 255, 0.25) 21px, rgba(255, 255, 255, 0.25) 60px, transparent 61px, transparent 80px);
   background-size: 80px 80px;
+}
+.stage .cube-positioning.three figure.top {
+  background-image: none;
 }
 .stage .cube-positioning.three figure.top:before {
   width: 50px;
@@ -147,10 +148,22 @@ body {
   -ms-border-radius: 50px;
   -o-border-radius: 50px;
   border-radius: 50px;
-  background-color: red;
+  background: #c80000;
 }
-.stage .cube-positioning.three .cube {
-  -webkit-transform-origin: -10px;
+.stage .cube-positioning.four {
+  -webkit-transform: translateZ(-1200px) translateX(50px);
+  -moz-transform: translateZ(-1200px) translateX(50px);
+  -ms-transform: translateZ(-1200px) translateX(50px);
+  -o-transform: translateZ(-1200px) translateX(50px);
+  transform: translateZ(-1200px) translateX(50px);
+  z-index: 5;
+}
+.stage .cube-positioning.four figure {
+  background: url(../images/mc_side.png);
+  background-size: 100%;
+}
+.stage .cube-positioning.four figure.top {
+  background-image: url(../images/mc_top.png);
 }
 .stage figure {
   display: block;
@@ -193,6 +206,7 @@ body {
   z-index: 10;
 }
 .stage .back {
+  background-color: #52acff;
   -webkit-transform: rotateY(180deg) translateZ(150px);
   -moz-transform: rotateY(180deg) translateZ(150px);
   -ms-transform: rotateY(180deg) translateZ(150px);

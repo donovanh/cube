@@ -7,7 +7,7 @@ $animationDuration: 20s
 $maxOpacity: 0.9
 
 body
-  background-color: #eee
+  background-color: #666
 
 .stage
   width: 600px
@@ -29,11 +29,11 @@ body
     position: absolute
 
     &.one
-      @include transform(translateZ(100px) translateX(-50px) rotateZ(-5deg))
+      @include transform(translateZ(100px) translateX(-50px))
       z-index: 10
 
     &.two
-      @include transform(translateZ(-500px) translateX(500px) rotateZ(-3deg))
+      @include transform(translateZ(-500px) translateX(420px))
       z-index: 5
 
       figure
@@ -41,28 +41,36 @@ body
         background-size: 100%
 
     &.three
-      @include transform(translateZ(-1500px) translateX(-300px))
+      @include transform(translateZ(-1000px) translateX(-500px))
 
       figure
         background-color: #6b522b
+        background-image: repeating-linear-gradient(0deg, transparent, transparent 20px, rgba(255,255,255, 0.25) 21px, rgba(255,255,255, 0.25) 60px, transparent 61px, transparent 80px)
+        background-size: 80px 80px
 
-        &.front, &.left
-          background-image: repeating-linear-gradient(0deg, transparent, transparent 20px, rgba(255,255,255, 0.25) 21px, rgba(255,255,255, 0.25) 60px, transparent 61px, transparent 80px)
-          background-size: 80px 80px
+        &.top
+          background-image: none
 
-        &.top:before
-          width: 50px
-          height: 50px
-          top: 50%
-          left: 50%
-          opacity: 1
-          margin: -25px
-          @include border-radius(50px)
-          background-color: red
+          &:before
+            width: 50px
+            height: 50px
+            top: 50%
+            left: 50%
+            opacity: 1
+            margin: -25px
+            @include border-radius(50px)
+            background: #c80000
 
+    &.four
+      @include transform(translateZ(-1200px) translateX(50px))
+      z-index: 5
 
-      .cube
-        -webkit-transform-origin: -10px
+      figure
+        background: url(../images/mc_side.png)
+        background-size: 100%
+
+        &.top
+          background-image: url(../images/mc_top.png)
 
   figure
     display: block
@@ -93,6 +101,7 @@ body
       z-index: 10
 
   .back
+    background-color: #52acff
     @include transform(rotateY(180deg) translateZ(150px))
 
   .top
