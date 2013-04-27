@@ -38,7 +38,7 @@ html { line-height: 1; }
 }
 
 body {
-  background: -webkit-linear-gradient(#7fa8fb 0, #c0d4fd 150px, #64a43a 150px, #88c560);
+  background: -webkit-linear-gradient(#7fa8fb 0, #c0d4fd 250px, #64a43a 250px, #88c560);
 }
 
 /* Stage and cube */
@@ -55,7 +55,7 @@ body {
 
 .cube {
   -webkit-transform-style: preserve-3d;
-  -webkit-animation: rotate 10s infinite linear;
+  -webkit-animation: rotate 8s infinite linear;
 }
 
 figure {
@@ -91,11 +91,11 @@ figure:after {
 }
 
 .front:before {
-  -webkit-animation: frontShading1 10s infinite linear;
+  -webkit-animation: frontShading1 8s infinite linear;
 }
 
 .front:after {
-  -webkit-animation: frontShading2 10s infinite linear;
+  -webkit-animation: frontShading2 8s infinite linear;
 }
 
 .back {
@@ -103,11 +103,11 @@ figure:after {
 }
 
 .back:before {
-  -webkit-animation: backShading1 10s infinite linear;
+  -webkit-animation: backShading1 8s infinite linear;
 }
 
 .back:after {
-  -webkit-animation: backShading2 10s infinite linear;
+  -webkit-animation: backShading2 8s infinite linear;
 }
 
 .top {
@@ -123,7 +123,7 @@ figure:after {
   margin-left: -50%;
   margin-top: -50%;
   background: -webkit-radial-gradient(bottom, rgba(0, 0, 0, 0), #000000);
-  -webkit-animation: rotateTop 10s infinite linear;
+  -webkit-animation: rotateTop 8s infinite linear;
 }
 
 .bottom {
@@ -139,11 +139,11 @@ figure:after {
 }
 
 .left:before {
-  -webkit-animation: leftShading1 10s infinite linear;
+  -webkit-animation: leftShading1 8s infinite linear;
 }
 
 .left:after {
-  -webkit-animation: leftShading2 10s infinite linear;
+  -webkit-animation: leftShading2 8s infinite linear;
 }
 
 .right {
@@ -151,11 +151,11 @@ figure:after {
 }
 
 .right:before {
-  -webkit-animation: rightShading1 10s infinite linear;
+  -webkit-animation: rightShading1 8s infinite linear;
 }
 
 .right:after {
-  -webkit-animation: rightShading2 10s infinite linear;
+  -webkit-animation: rightShading2 8s infinite linear;
 }
 
 /* Animations */
