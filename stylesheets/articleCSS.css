@@ -1,0 +1,301 @@
+/* BASIC RESET CSS FOR THIS EXAMPLE */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+html { line-height: 1; }
+
+/* Article styles */
+
+
+/* Fallback code */
+
+.stage {
+  display: none;
+}
+
+.csstransforms3d .stage {
+  display: block;
+}
+
+.fallback-stage {
+  width: 100%;
+  height: 600px;
+  background: url(../images/fallback.png) no-repeat center;
+}
+
+.csstransforms3d .fallback-stage {
+  display: none;
+}
+
+/* Stage and cube */
+
+.stage {
+  width: 300px;
+  height: 300px;
+  margin: 100px auto;
+  position: relative;
+  -webkit-perspective: 1600px;
+  -webkit-perspective-origin: 50% -240px;
+  -webkit-animation: introduceCube 1.5s ease-out;
+}
+
+.cube {
+  -webkit-transform-style: preserve-3d;
+  -webkit-animation: rotate 10s infinite linear;
+}
+
+figure {
+  display: block;
+  width: 300px;
+  height: 300px;
+  background-color: #6b522b;
+  background-image: repeating-linear-gradient(0deg, transparent, transparent 20px, rgba(255, 255, 255, 0.25) 21px, rgba(255, 255, 255, 0.25) 60px, transparent 61px, transparent 80px);
+  background-size: 80px 80px;
+  position: absolute;
+  overflow: hidden;
+  -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(RGBA(0, 0, 0, 0.1)));
+}
+
+figure:before, figure:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+figure:before {
+  background: -webkit-radial-gradient(top left, rgba(0, 0, 0, 0.5), #000000);
+}
+
+figure:after {
+  background: -webkit-radial-gradient(top right, rgba(0, 0, 0, 0.5), #000000);
+}
+
+.front {
+  -webkit-transform: translateZ(150px);
+}
+
+.front:before {
+  -webkit-animation: frontShading1 10s infinite linear;
+}
+
+.front:after {
+  -webkit-animation: frontShading2 10s infinite linear;
+}
+
+.back {
+  -webkit-transform: rotateY(180deg) translateZ(150px);
+}
+
+.back:before {
+  -webkit-animation: backShading1 10s infinite linear;
+}
+
+.back:after {
+  -webkit-animation: backShading2 10s infinite linear;
+}
+
+.top {
+  -webkit-transform: rotateX(90deg) translateZ(150px);
+  background-image: none;
+  -webkit-box-reflect: none;
+}
+
+.top:after {
+  content: " ";
+  opacity: 0.5;
+  width: 200%;
+  height: 200%;
+  margin-left: -50%;
+  margin-top: -50%;
+  background: -webkit-radial-gradient(bottom, rgba(0, 0, 0, 0), #000000);
+  -webkit-animation: rotateTop 10s infinite linear;
+}
+
+.bottom {
+  -webkit-transform: rotateX(-90deg) translateZ(150px);
+  -webkit-box-shadow: 0 10px 100px rgba(0, 0, 0, 0.7);
+  -webkit-backface-visibility: visible;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-box-reflect: none;
+}
+
+.left {
+  -webkit-transform: rotateY(-90deg) translateZ(150px);
+}
+
+.left:before {
+  -webkit-animation: leftShading1 10s infinite linear;
+}
+
+.left:after {
+  -webkit-animation: leftShading2 10s infinite linear;
+}
+
+.right {
+  -webkit-transform: rotateY(90deg) translateZ(150px);
+}
+
+.right:before {
+  -webkit-animation: rightShading1 10s infinite linear;
+}
+
+.right:after {
+  -webkit-animation: rightShading2 10s infinite linear;
+}
+
+/* Animations */
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+  }
+}
+@-webkit-keyframes frontShading1 {
+  2% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  35% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes frontShading2 {
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0.8;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes backShading1 {
+  25% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.8;
+  }
+}
+@-webkit-keyframes backShading2 {
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.8;
+  }
+}
+@-webkit-keyframes leftShading1 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  60% {
+    opacity: 0.8;
+  }
+}
+@-webkit-keyframes leftShading2 {
+  0% {
+    opacity: 0.8;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+@-webkit-keyframes rightShading2 {
+  50% {
+    opacity: 0.8;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes rightShading1 {
+  10% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
+
+@-webkit-keyframes rotateTop {
+  0% {
+    -webkit-transform: rotateZ(0);
+  }
+  100% {
+    -webkit-transform: rotateZ(360deg);
+  }
+}
+
+@-webkit-keyframes introduceCube {
+  0% {
+    opacity: 0;
+    top: -20px;
+    -webkit-transform: scale(0.6);
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+    -webkit-transform: scale(1);
+  }
+}
