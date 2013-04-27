@@ -59,7 +59,6 @@ figure {
   width: 300px;
   height: 300px;
   background-color: #ccc;
-  background-image: url(../images/mc_side.png);
   background-size: 100%;
   position: absolute;
   overflow: hidden;
@@ -84,6 +83,7 @@ figure:after {
 }
 
 .front {
+  background-color: #60c2ef;
   -webkit-transform: translateZ(150px);
 }
 
@@ -96,6 +96,7 @@ figure:after {
 }
 
 .back {
+  background-color: #52acff;
   -webkit-transform: rotateY(180deg) translateZ(150px);
 }
 
@@ -108,8 +109,8 @@ figure:after {
 }
 
 .top {
+  background-color: #fff952;
   -webkit-transform: rotateX(90deg) translateZ(150px);
-  background-image: url(../images/mc_top.png);
   -webkit-box-reflect: none;
 }
 
@@ -133,6 +134,7 @@ figure:after {
 }
 
 .left {
+  background-color: #52ff73;
   -webkit-transform: rotateY(-90deg) translateZ(150px);
 }
 
@@ -145,6 +147,7 @@ figure:after {
 }
 
 .right {
+  background-color: #ff5262;
   -webkit-transform: rotateY(90deg) translateZ(150px);
 }
 
