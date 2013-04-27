@@ -16,6 +16,9 @@ html { line-height: 1; }
 
 /* Article styles */
 
+body {
+  background-color: #2c3035;
+}
 
 /* Fallback code */
 

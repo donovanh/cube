@@ -38,7 +38,7 @@ html { line-height: 1; }
 }
 
 body {
-  background: -webkit-linear-gradient(#7fa8fb 0, #7fa8fb 150px, #688446 150px);
+  background: -webkit-linear-gradient(#7fa8fb 0, #c0d4fd 150px, #64a43a 150px, #88c560);
 }
 
 /* Stage and cube */
@@ -67,7 +67,6 @@ figure {
   background-size: 100%;
   position: absolute;
   overflow: hidden;
-  -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(60%, transparent), to(RGBA(0, 0, 0, 0.2)));
 }
 
 figure:before, figure:after {
@@ -114,7 +113,6 @@ figure:after {
 .top {
   -webkit-transform: rotateX(90deg) translateZ(150px);
   background-image: url(../images/mc_top.png);
-  -webkit-box-reflect: none;
 }
 
 .top:after {
