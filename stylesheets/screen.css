@@ -166,7 +166,7 @@ sup {
 .scene .cube-positioning.three .cube {
   -webkit-transform-origin: -100px;
 }
-/* line 61, ../sass/screen.sass */
+/* line 59, ../sass/screen.sass */
 .scene figure {
   display: block;
   width: 300px;
@@ -188,7 +188,7 @@ sup {
   overflow: hidden;
   -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(RGBA(0, 0, 0, 0.1)));
 }
-/* line 74, ../sass/screen.sass */
+/* line 72, ../sass/screen.sass */
 .scene figure:before, .scene figure:after {
   content: "";
   display: block;
@@ -197,7 +197,7 @@ sup {
   height: 100%;
   opacity: 0;
 }
-/* line 82, ../sass/screen.sass */
+/* line 80, ../sass/screen.sass */
 .scene figure:before {
   background: -webkit-gradient(radial, 0% 0%, 0, 0% 0%, 100, color-stop(0%, rgba(20, 20, 20, 0.5)), color-stop(100%, #000000));
   background: -webkit-radial-gradient(top left, rgba(20, 20, 20, 0.5), #000000);
@@ -206,7 +206,7 @@ sup {
   background: radial-gradient(top left, rgba(20, 20, 20, 0.5), #000000);
   z-index: 10;
 }
-/* line 86, ../sass/screen.sass */
+/* line 84, ../sass/screen.sass */
 .scene figure:after {
   background: -webkit-gradient(radial, 0% 100%, 0, 0% 100%, 100, color-stop(0%, #000000), color-stop(100%, rgba(20, 20, 20, 0.5)));
   background: -webkit-radial-gradient(bottom left, #000000, rgba(20, 20, 20, 0.5));
@@ -215,7 +215,7 @@ sup {
   background: radial-gradient(bottom left, #000000, rgba(20, 20, 20, 0.5));
   z-index: 10;
 }
-/* line 90, ../sass/screen.sass */
+/* line 88, ../sass/screen.sass */
 .scene .back {
   -webkit-transform: rotateY(180deg) translateZ(150px);
   -moz-transform: rotateY(180deg) translateZ(150px);
@@ -223,7 +223,7 @@ sup {
   -o-transform: rotateY(180deg) translateZ(150px);
   transform: rotateY(180deg) translateZ(150px);
 }
-/* line 92, ../sass/screen.sass */
+/* line 90, ../sass/screen.sass */
 .scene .back:before {
   background: -webkit-gradient(radial, 100% 0%, 0, 100% 0%, 100, color-stop(0%, rgba(20, 20, 20, 0.5)), color-stop(100%, #000000));
   background: -webkit-radial-gradient(top right, rgba(20, 20, 20, 0.5), #000000);
@@ -236,7 +236,7 @@ sup {
   -o-animation: backShading1 10s infinite linear;
   animation: backShading1 10s infinite linear;
 }
-/* line 95, ../sass/screen.sass */
+/* line 93, ../sass/screen.sass */
 .scene .back:after {
   background: -webkit-gradient(radial, 100% 100%, 0, 100% 100%, 100, color-stop(0%, #000000), color-stop(100%, rgba(20, 20, 20, 0.5)));
   background: -webkit-radial-gradient(bottom right, #000000, rgba(20, 20, 20, 0.5));
@@ -249,7 +249,7 @@ sup {
   -o-animation: backShading2 10s infinite linear;
   animation: backShading2 10s infinite linear;
 }
-/* line 98, ../sass/screen.sass */
+/* line 96, ../sass/screen.sass */
 .scene .top {
   background: #ff7a47;
   -webkit-transform: rotateX(90deg) translateZ(150px);
@@ -259,7 +259,7 @@ sup {
   transform: rotateX(90deg) translateZ(150px);
   -webkit-box-reflect: none;
 }
-/* line 103, ../sass/screen.sass */
+/* line 101, ../sass/screen.sass */
 .scene .top:after {
   content: " ";
   opacity: 0.5;
@@ -278,7 +278,7 @@ sup {
   -o-animation: rotateTop 10s infinite linear;
   animation: rotateTop 10s infinite linear;
 }
-/* line 114, ../sass/screen.sass */
+/* line 112, ../sass/screen.sass */
 .scene .bottom {
   -webkit-transform: rotateX(-90deg) translateZ(150px);
   -moz-transform: rotateX(-90deg) translateZ(150px);
@@ -296,7 +296,7 @@ sup {
   background-color: rgba(0, 0, 0, 0);
   -webkit-box-reflect: none;
 }
-/* line 121, ../sass/screen.sass */
+/* line 119, ../sass/screen.sass */
 .scene .left {
   -webkit-transform: rotateY(-90deg) translateZ(150px);
   -moz-transform: rotateY(-90deg) translateZ(150px);
@@ -304,7 +304,7 @@ sup {
   -o-transform: rotateY(-90deg) translateZ(150px);
   transform: rotateY(-90deg) translateZ(150px);
 }
-/* line 123, ../sass/screen.sass */
+/* line 121, ../sass/screen.sass */
 .scene .left:before {
   -webkit-animation: leftShading1 10s infinite linear;
   -moz-animation: leftShading1 10s infinite linear;
@@ -312,7 +312,7 @@ sup {
   -o-animation: leftShading1 10s infinite linear;
   animation: leftShading1 10s infinite linear;
 }
-/* line 125, ../sass/screen.sass */
+/* line 123, ../sass/screen.sass */
 .scene .left:after {
   -webkit-animation: leftShading2 10s infinite linear;
   -moz-animation: leftShading2 10s infinite linear;
@@ -320,7 +320,7 @@ sup {
   -o-animation: leftShading2 10s infinite linear;
   animation: leftShading2 10s infinite linear;
 }
-/* line 127, ../sass/screen.sass */
+/* line 125, ../sass/screen.sass */
 .scene .right {
   -webkit-transform: rotateY(90deg) translateZ(150px);
   -moz-transform: rotateY(90deg) translateZ(150px);
@@ -328,7 +328,7 @@ sup {
   -o-transform: rotateY(90deg) translateZ(150px);
   transform: rotateY(90deg) translateZ(150px);
 }
-/* line 129, ../sass/screen.sass */
+/* line 127, ../sass/screen.sass */
 .scene .right:before {
   -webkit-animation: rightShading1 10s infinite linear;
   -moz-animation: rightShading1 10s infinite linear;
@@ -336,7 +336,7 @@ sup {
   -o-animation: rightShading1 10s infinite linear;
   animation: rightShading1 10s infinite linear;
 }
-/* line 131, ../sass/screen.sass */
+/* line 129, ../sass/screen.sass */
 .scene .right:after {
   -webkit-animation: rightShading2 10s infinite linear;
   -moz-animation: rightShading2 10s infinite linear;
@@ -344,7 +344,7 @@ sup {
   -o-animation: rightShading2 10s infinite linear;
   animation: rightShading2 10s infinite linear;
 }
-/* line 133, ../sass/screen.sass */
+/* line 131, ../sass/screen.sass */
 .scene .front {
   -webkit-transform: translateZ(150px);
   -moz-transform: translateZ(150px);
@@ -352,7 +352,7 @@ sup {
   -o-transform: translateZ(150px);
   transform: translateZ(150px);
 }
-/* line 135, ../sass/screen.sass */
+/* line 133, ../sass/screen.sass */
 .scene .front:before {
   -webkit-animation: frontShading1 10s infinite linear;
   -moz-animation: frontShading1 10s infinite linear;
@@ -360,7 +360,7 @@ sup {
   -o-animation: frontShading1 10s infinite linear;
   animation: frontShading1 10s infinite linear;
 }
-/* line 137, ../sass/screen.sass */
+/* line 135, ../sass/screen.sass */
 .scene .front:after {
   -webkit-animation: frontShading2 10s infinite linear;
   -moz-animation: frontShading2 10s infinite linear;
@@ -370,13 +370,13 @@ sup {
 }
 
 @-moz-keyframes rotate {
-  /* line 142, ../sass/screen.sass */
+  /* line 140, ../sass/screen.sass */
   0% {
     -moz-transform: rotateY(0);
     transform: rotateY(0);
   }
 
-  /* line 144, ../sass/screen.sass */
+  /* line 142, ../sass/screen.sass */
   100% {
     -moz-transform: rotateY(360deg);
     transform: rotateY(360deg);
@@ -384,13 +384,13 @@ sup {
 }
 
 @-webkit-keyframes rotate {
-  /* line 142, ../sass/screen.sass */
+  /* line 140, ../sass/screen.sass */
   0% {
     -webkit-transform: rotateY(0);
     transform: rotateY(0);
   }
 
-  /* line 144, ../sass/screen.sass */
+  /* line 142, ../sass/screen.sass */
   100% {
     -webkit-transform: rotateY(360deg);
     transform: rotateY(360deg);
@@ -398,13 +398,13 @@ sup {
 }
 
 @-o-keyframes rotate {
-  /* line 142, ../sass/screen.sass */
+  /* line 140, ../sass/screen.sass */
   0% {
     -o-transform: rotateY(0);
     transform: rotateY(0);
   }
 
-  /* line 144, ../sass/screen.sass */
+  /* line 142, ../sass/screen.sass */
   100% {
     -o-transform: rotateY(360deg);
     transform: rotateY(360deg);
@@ -412,13 +412,13 @@ sup {
 }
 
 @-ms-keyframes rotate {
-  /* line 142, ../sass/screen.sass */
+  /* line 140, ../sass/screen.sass */
   0% {
     -ms-transform: rotateY(0);
     transform: rotateY(0);
   }
 
-  /* line 144, ../sass/screen.sass */
+  /* line 142, ../sass/screen.sass */
   100% {
     -ms-transform: rotateY(360deg);
     transform: rotateY(360deg);
@@ -426,880 +426,880 @@ sup {
 }
 
 @keyframes rotate {
-  /* line 142, ../sass/screen.sass */
+  /* line 140, ../sass/screen.sass */
   0% {
     transform: rotateY(0);
   }
 
-  /* line 144, ../sass/screen.sass */
+  /* line 142, ../sass/screen.sass */
   100% {
     transform: rotateY(360deg);
   }
 }
 
 @-moz-keyframes frontShading1 {
-  /* line 148, ../sass/screen.sass */
+  /* line 146, ../sass/screen.sass */
   2% {
     opacity: 0;
   }
 
-  /* line 150, ../sass/screen.sass */
+  /* line 148, ../sass/screen.sass */
   25% {
     opacity: 0.8;
   }
 
-  /* line 152, ../sass/screen.sass */
+  /* line 150, ../sass/screen.sass */
   35% {
     opacity: 0.8;
   }
 
-  /* line 154, ../sass/screen.sass */
+  /* line 152, ../sass/screen.sass */
   50% {
     opacity: 0;
   }
 }
 
 @-webkit-keyframes frontShading1 {
-  /* line 148, ../sass/screen.sass */
+  /* line 146, ../sass/screen.sass */
   2% {
     opacity: 0;
   }
 
-  /* line 150, ../sass/screen.sass */
+  /* line 148, ../sass/screen.sass */
   25% {
     opacity: 0.8;
   }
 
-  /* line 152, ../sass/screen.sass */
+  /* line 150, ../sass/screen.sass */
   35% {
     opacity: 0.8;
   }
 
-  /* line 154, ../sass/screen.sass */
+  /* line 152, ../sass/screen.sass */
   50% {
     opacity: 0;
   }
 }
 
 @-o-keyframes frontShading1 {
-  /* line 148, ../sass/screen.sass */
+  /* line 146, ../sass/screen.sass */
   2% {
     opacity: 0;
   }
 
-  /* line 150, ../sass/screen.sass */
+  /* line 148, ../sass/screen.sass */
   25% {
     opacity: 0.8;
   }
 
-  /* line 152, ../sass/screen.sass */
+  /* line 150, ../sass/screen.sass */
   35% {
     opacity: 0.8;
   }
 
-  /* line 154, ../sass/screen.sass */
+  /* line 152, ../sass/screen.sass */
   50% {
     opacity: 0;
   }
 }
 
 @-ms-keyframes frontShading1 {
-  /* line 148, ../sass/screen.sass */
+  /* line 146, ../sass/screen.sass */
   2% {
     opacity: 0;
   }
 
-  /* line 150, ../sass/screen.sass */
+  /* line 148, ../sass/screen.sass */
   25% {
     opacity: 0.8;
   }
 
-  /* line 152, ../sass/screen.sass */
+  /* line 150, ../sass/screen.sass */
   35% {
     opacity: 0.8;
   }
 
-  /* line 154, ../sass/screen.sass */
+  /* line 152, ../sass/screen.sass */
   50% {
     opacity: 0;
   }
 }
 
 @keyframes frontShading1 {
-  /* line 148, ../sass/screen.sass */
+  /* line 146, ../sass/screen.sass */
   2% {
     opacity: 0;
   }
 
-  /* line 150, ../sass/screen.sass */
+  /* line 148, ../sass/screen.sass */
   25% {
     opacity: 0.8;
   }
 
-  /* line 152, ../sass/screen.sass */
+  /* line 150, ../sass/screen.sass */
   35% {
     opacity: 0.8;
   }
 
-  /* line 154, ../sass/screen.sass */
+  /* line 152, ../sass/screen.sass */
   50% {
     opacity: 0;
   }
 }
 
 @-moz-keyframes frontShading2 {
-  /* line 158, ../sass/screen.sass */
+  /* line 156, ../sass/screen.sass */
   50% {
     opacity: 0;
   }
 
-  /* line 160, ../sass/screen.sass */
+  /* line 158, ../sass/screen.sass */
   60% {
     opacity: 0.8;
   }
 
-  /* line 162, ../sass/screen.sass */
+  /* line 160, ../sass/screen.sass */
   75% {
     opacity: 0.8;
   }
 
-  /* line 164, ../sass/screen.sass */
+  /* line 162, ../sass/screen.sass */
   100% {
     opacity: 0;
   }
 }
 
 @-webkit-keyframes frontShading2 {
-  /* line 158, ../sass/screen.sass */
+  /* line 156, ../sass/screen.sass */
   50% {
     opacity: 0;
   }
 
-  /* line 160, ../sass/screen.sass */
+  /* line 158, ../sass/screen.sass */
   60% {
     opacity: 0.8;
   }
 
-  /* line 162, ../sass/screen.sass */
+  /* line 160, ../sass/screen.sass */
   75% {
     opacity: 0.8;
   }
 
-  /* line 164, ../sass/screen.sass */
+  /* line 162, ../sass/screen.sass */
   100% {
     opacity: 0;
   }
 }
 
 @-o-keyframes frontShading2 {
-  /* line 158, ../sass/screen.sass */
+  /* line 156, ../sass/screen.sass */
   50% {
     opacity: 0;
   }
 
-  /* line 160, ../sass/screen.sass */
+  /* line 158, ../sass/screen.sass */
   60% {
     opacity: 0.8;
   }
 
-  /* line 162, ../sass/screen.sass */
+  /* line 160, ../sass/screen.sass */
   75% {
     opacity: 0.8;
   }
 
-  /* line 164, ../sass/screen.sass */
+  /* line 162, ../sass/screen.sass */
   100% {
     opacity: 0;
   }
 }
 
 @-ms-keyframes frontShading2 {
-  /* line 158, ../sass/screen.sass */
+  /* line 156, ../sass/screen.sass */
   50% {
     opacity: 0;
   }
 
-  /* line 160, ../sass/screen.sass */
+  /* line 158, ../sass/screen.sass */
   60% {
     opacity: 0.8;
   }
 
-  /* line 162, ../sass/screen.sass */
+  /* line 160, ../sass/screen.sass */
   75% {
     opacity: 0.8;
   }
 
-  /* line 164, ../sass/screen.sass */
+  /* line 162, ../sass/screen.sass */
   100% {
     opacity: 0;
   }
 }
 
 @keyframes frontShading2 {
-  /* line 158, ../sass/screen.sass */
+  /* line 156, ../sass/screen.sass */
   50% {
     opacity: 0;
   }
 
-  /* line 160, ../sass/screen.sass */
+  /* line 158, ../sass/screen.sass */
   60% {
     opacity: 0.8;
   }
 
-  /* line 162, ../sass/screen.sass */
+  /* line 160, ../sass/screen.sass */
   75% {
     opacity: 0.8;
   }
 
-  /* line 164, ../sass/screen.sass */
+  /* line 162, ../sass/screen.sass */
   100% {
     opacity: 0;
   }
 }
 
 @-moz-keyframes backShading1 {
-  /* line 168, ../sass/screen.sass */
+  /* line 166, ../sass/screen.sass */
   25% {
     opacity: 0.8;
   }
 
-  /* line 170, ../sass/screen.sass */
+  /* line 168, ../sass/screen.sass */
   50% {
     opacity: 0;
   }
 
-  /* line 172, ../sass/screen.sass */
+  /* line 170, ../sass/screen.sass */
   75% {
     opacity: 0;
   }
 
-  /* line 174, ../sass/screen.sass */
+  /* line 172, ../sass/screen.sass */
   80% {
     opacity: 0.8;
   }
 }
 
 @-webkit-keyframes backShading1 {
-  /* line 168, ../sass/screen.sass */
+  /* line 166, ../sass/screen.sass */
   25% {
     opacity: 0.8;
   }
 
-  /* line 170, ../sass/screen.sass */
+  /* line 168, ../sass/screen.sass */
   50% {
     opacity: 0;
   }
 
-  /* line 172, ../sass/screen.sass */
+  /* line 170, ../sass/screen.sass */
   75% {
     opacity: 0;
   }
 
-  /* line 174, ../sass/screen.sass */
+  /* line 172, ../sass/screen.sass */
   80% {
     opacity: 0.8;
   }
 }
 
 @-o-keyframes backShading1 {
-  /* line 168, ../sass/screen.sass */
+  /* line 166, ../sass/screen.sass */
   25% {
     opacity: 0.8;
   }
 
-  /* line 170, ../sass/screen.sass */
+  /* line 168, ../sass/screen.sass */
   50% {
     opacity: 0;
   }
 
-  /* line 172, ../sass/screen.sass */
+  /* line 170, ../sass/screen.sass */
   75% {
     opacity: 0;
   }
 
-  /* line 174, ../sass/screen.sass */
+  /* line 172, ../sass/screen.sass */
   80% {
     opacity: 0.8;
   }
 }
 
 @-ms-keyframes backShading1 {
-  /* line 168, ../sass/screen.sass */
+  /* line 166, ../sass/screen.sass */
   25% {
     opacity: 0.8;
   }
 
-  /* line 170, ../sass/screen.sass */
+  /* line 168, ../sass/screen.sass */
   50% {
     opacity: 0;
   }
 
-  /* line 172, ../sass/screen.sass */
+  /* line 170, ../sass/screen.sass */
   75% {
     opacity: 0;
   }
 
-  /* line 174, ../sass/screen.sass */
+  /* line 172, ../sass/screen.sass */
   80% {
     opacity: 0.8;
   }
 }
 
 @keyframes backShading1 {
-  /* line 168, ../sass/screen.sass */
+  /* line 166, ../sass/screen.sass */
   25% {
     opacity: 0.8;
   }
 
-  /* line 170, ../sass/screen.sass */
+  /* line 168, ../sass/screen.sass */
   50% {
     opacity: 0;
   }
 
-  /* line 172, ../sass/screen.sass */
+  /* line 170, ../sass/screen.sass */
   75% {
     opacity: 0;
   }
 
-  /* line 174, ../sass/screen.sass */
+  /* line 172, ../sass/screen.sass */
   80% {
     opacity: 0.8;
   }
 }
 
 @-moz-keyframes backShading2 {
-  /* line 178, ../sass/screen.sass */
+  /* line 176, ../sass/screen.sass */
   25% {
     opacity: 0;
   }
 
-  /* line 180, ../sass/screen.sass */
+  /* line 178, ../sass/screen.sass */
   50% {
     opacity: 0;
   }
 
-  /* line 182, ../sass/screen.sass */
+  /* line 180, ../sass/screen.sass */
   75% {
     opacity: 0.8;
   }
 
-  /* line 184, ../sass/screen.sass */
+  /* line 182, ../sass/screen.sass */
   80% {
     opacity: 0.8;
   }
 }
 
 @-webkit-keyframes backShading2 {
-  /* line 178, ../sass/screen.sass */
+  /* line 176, ../sass/screen.sass */
   25% {
     opacity: 0;
   }
 
-  /* line 180, ../sass/screen.sass */
+  /* line 178, ../sass/screen.sass */
   50% {
     opacity: 0;
   }
 
-  /* line 182, ../sass/screen.sass */
+  /* line 180, ../sass/screen.sass */
   75% {
     opacity: 0.8;
   }
 
-  /* line 184, ../sass/screen.sass */
+  /* line 182, ../sass/screen.sass */
   80% {
     opacity: 0.8;
   }
 }
 
 @-o-keyframes backShading2 {
-  /* line 178, ../sass/screen.sass */
+  /* line 176, ../sass/screen.sass */
   25% {
     opacity: 0;
   }
 
-  /* line 180, ../sass/screen.sass */
+  /* line 178, ../sass/screen.sass */
   50% {
     opacity: 0;
   }
 
-  /* line 182, ../sass/screen.sass */
+  /* line 180, ../sass/screen.sass */
   75% {
     opacity: 0.8;
   }
 
-  /* line 184, ../sass/screen.sass */
+  /* line 182, ../sass/screen.sass */
   80% {
     opacity: 0.8;
   }
 }
 
 @-ms-keyframes backShading2 {
-  /* line 178, ../sass/screen.sass */
+  /* line 176, ../sass/screen.sass */
   25% {
     opacity: 0;
   }
 
-  /* line 180, ../sass/screen.sass */
+  /* line 178, ../sass/screen.sass */
   50% {
     opacity: 0;
   }
 
-  /* line 182, ../sass/screen.sass */
+  /* line 180, ../sass/screen.sass */
   75% {
     opacity: 0.8;
   }
 
-  /* line 184, ../sass/screen.sass */
+  /* line 182, ../sass/screen.sass */
   80% {
     opacity: 0.8;
   }
 }
 
 @keyframes backShading2 {
-  /* line 178, ../sass/screen.sass */
+  /* line 176, ../sass/screen.sass */
   25% {
     opacity: 0;
   }
 
-  /* line 180, ../sass/screen.sass */
+  /* line 178, ../sass/screen.sass */
   50% {
     opacity: 0;
   }
 
-  /* line 182, ../sass/screen.sass */
+  /* line 180, ../sass/screen.sass */
   75% {
     opacity: 0.8;
   }
 
-  /* line 184, ../sass/screen.sass */
+  /* line 182, ../sass/screen.sass */
   80% {
     opacity: 0.8;
   }
 }
 
 @-moz-keyframes leftShading1 {
-  /* line 188, ../sass/screen.sass */
+  /* line 186, ../sass/screen.sass */
   0% {
     opacity: 0;
   }
 
-  /* line 190, ../sass/screen.sass */
+  /* line 188, ../sass/screen.sass */
   25% {
     opacity: 0;
   }
 
-  /* line 192, ../sass/screen.sass */
+  /* line 190, ../sass/screen.sass */
   50% {
     opacity: 0.8;
   }
 
-  /* line 194, ../sass/screen.sass */
+  /* line 192, ../sass/screen.sass */
   60% {
     opacity: 0.8;
   }
 }
 
 @-webkit-keyframes leftShading1 {
-  /* line 188, ../sass/screen.sass */
+  /* line 186, ../sass/screen.sass */
   0% {
     opacity: 0;
   }
 
-  /* line 190, ../sass/screen.sass */
+  /* line 188, ../sass/screen.sass */
   25% {
     opacity: 0;
   }
 
-  /* line 192, ../sass/screen.sass */
+  /* line 190, ../sass/screen.sass */
   50% {
     opacity: 0.8;
   }
 
-  /* line 194, ../sass/screen.sass */
+  /* line 192, ../sass/screen.sass */
   60% {
     opacity: 0.8;
   }
 }
 
 @-o-keyframes leftShading1 {
-  /* line 188, ../sass/screen.sass */
+  /* line 186, ../sass/screen.sass */
   0% {
     opacity: 0;
   }
 
-  /* line 190, ../sass/screen.sass */
+  /* line 188, ../sass/screen.sass */
   25% {
     opacity: 0;
   }
 
-  /* line 192, ../sass/screen.sass */
+  /* line 190, ../sass/screen.sass */
   50% {
     opacity: 0.8;
   }
 
-  /* line 194, ../sass/screen.sass */
+  /* line 192, ../sass/screen.sass */
   60% {
     opacity: 0.8;
   }
 }
 
 @-ms-keyframes leftShading1 {
-  /* line 188, ../sass/screen.sass */
+  /* line 186, ../sass/screen.sass */
   0% {
     opacity: 0;
   }
 
-  /* line 190, ../sass/screen.sass */
+  /* line 188, ../sass/screen.sass */
   25% {
     opacity: 0;
   }
 
-  /* line 192, ../sass/screen.sass */
+  /* line 190, ../sass/screen.sass */
   50% {
     opacity: 0.8;
   }
 
-  /* line 194, ../sass/screen.sass */
+  /* line 192, ../sass/screen.sass */
   60% {
     opacity: 0.8;
   }
 }
 
 @keyframes leftShading1 {
-  /* line 188, ../sass/screen.sass */
+  /* line 186, ../sass/screen.sass */
   0% {
     opacity: 0;
   }
 
-  /* line 190, ../sass/screen.sass */
+  /* line 188, ../sass/screen.sass */
   25% {
     opacity: 0;
   }
 
-  /* line 192, ../sass/screen.sass */
+  /* line 190, ../sass/screen.sass */
   50% {
     opacity: 0.8;
   }
 
-  /* line 194, ../sass/screen.sass */
+  /* line 192, ../sass/screen.sass */
   60% {
     opacity: 0.8;
   }
 }
 
 @-moz-keyframes leftShading2 {
-  /* line 198, ../sass/screen.sass */
+  /* line 196, ../sass/screen.sass */
   0% {
     opacity: 0.8;
   }
 
-  /* line 200, ../sass/screen.sass */
+  /* line 198, ../sass/screen.sass */
   25% {
     opacity: 0;
   }
 
-  /* line 202, ../sass/screen.sass */
+  /* line 200, ../sass/screen.sass */
   50% {
     opacity: 0;
   }
 
-  /* line 204, ../sass/screen.sass */
+  /* line 202, ../sass/screen.sass */
   100% {
     opacity: 0.8;
   }
 }
 
 @-webkit-keyframes leftShading2 {
-  /* line 198, ../sass/screen.sass */
+  /* line 196, ../sass/screen.sass */
   0% {
     opacity: 0.8;
   }
 
-  /* line 200, ../sass/screen.sass */
+  /* line 198, ../sass/screen.sass */
   25% {
     opacity: 0;
   }
 
-  /* line 202, ../sass/screen.sass */
+  /* line 200, ../sass/screen.sass */
   50% {
     opacity: 0;
   }
 
-  /* line 204, ../sass/screen.sass */
+  /* line 202, ../sass/screen.sass */
   100% {
     opacity: 0.8;
   }
 }
 
 @-o-keyframes leftShading2 {
-  /* line 198, ../sass/screen.sass */
+  /* line 196, ../sass/screen.sass */
   0% {
     opacity: 0.8;
   }
 
-  /* line 200, ../sass/screen.sass */
+  /* line 198, ../sass/screen.sass */
   25% {
     opacity: 0;
   }
 
-  /* line 202, ../sass/screen.sass */
+  /* line 200, ../sass/screen.sass */
   50% {
     opacity: 0;
   }
 
-  /* line 204, ../sass/screen.sass */
+  /* line 202, ../sass/screen.sass */
   100% {
     opacity: 0.8;
   }
 }
 
 @-ms-keyframes leftShading2 {
-  /* line 198, ../sass/screen.sass */
+  /* line 196, ../sass/screen.sass */
   0% {
     opacity: 0.8;
   }
 
-  /* line 200, ../sass/screen.sass */
+  /* line 198, ../sass/screen.sass */
   25% {
     opacity: 0;
   }
 
-  /* line 202, ../sass/screen.sass */
+  /* line 200, ../sass/screen.sass */
   50% {
     opacity: 0;
   }
 
-  /* line 204, ../sass/screen.sass */
+  /* line 202, ../sass/screen.sass */
   100% {
     opacity: 0.8;
   }
 }
 
 @keyframes leftShading2 {
-  /* line 198, ../sass/screen.sass */
+  /* line 196, ../sass/screen.sass */
   0% {
     opacity: 0.8;
   }
 
-  /* line 200, ../sass/screen.sass */
+  /* line 198, ../sass/screen.sass */
   25% {
     opacity: 0;
   }
 
-  /* line 202, ../sass/screen.sass */
+  /* line 200, ../sass/screen.sass */
   50% {
     opacity: 0;
   }
 
-  /* line 204, ../sass/screen.sass */
+  /* line 202, ../sass/screen.sass */
   100% {
     opacity: 0.8;
   }
 }
 
 @-moz-keyframes rightShading2 {
-  /* line 208, ../sass/screen.sass */
+  /* line 206, ../sass/screen.sass */
   50% {
     opacity: 0.8;
   }
 
-  /* line 210, ../sass/screen.sass */
+  /* line 208, ../sass/screen.sass */
   75% {
     opacity: 0;
   }
 
-  /* line 212, ../sass/screen.sass */
+  /* line 210, ../sass/screen.sass */
   100% {
     opacity: 0;
   }
 }
 
 @-webkit-keyframes rightShading2 {
-  /* line 208, ../sass/screen.sass */
+  /* line 206, ../sass/screen.sass */
   50% {
     opacity: 0.8;
   }
 
-  /* line 210, ../sass/screen.sass */
+  /* line 208, ../sass/screen.sass */
   75% {
     opacity: 0;
   }
 
-  /* line 212, ../sass/screen.sass */
+  /* line 210, ../sass/screen.sass */
   100% {
     opacity: 0;
   }
 }
 
 @-o-keyframes rightShading2 {
-  /* line 208, ../sass/screen.sass */
+  /* line 206, ../sass/screen.sass */
   50% {
     opacity: 0.8;
   }
 
-  /* line 210, ../sass/screen.sass */
+  /* line 208, ../sass/screen.sass */
   75% {
     opacity: 0;
   }
 
-  /* line 212, ../sass/screen.sass */
+  /* line 210, ../sass/screen.sass */
   100% {
     opacity: 0;
   }
 }
 
 @-ms-keyframes rightShading2 {
-  /* line 208, ../sass/screen.sass */
+  /* line 206, ../sass/screen.sass */
   50% {
     opacity: 0.8;
   }
 
-  /* line 210, ../sass/screen.sass */
+  /* line 208, ../sass/screen.sass */
   75% {
     opacity: 0;
   }
 
-  /* line 212, ../sass/screen.sass */
+  /* line 210, ../sass/screen.sass */
   100% {
     opacity: 0;
   }
 }
 
 @keyframes rightShading2 {
-  /* line 208, ../sass/screen.sass */
+  /* line 206, ../sass/screen.sass */
   50% {
     opacity: 0.8;
   }
 
-  /* line 210, ../sass/screen.sass */
+  /* line 208, ../sass/screen.sass */
   75% {
     opacity: 0;
   }
 
-  /* line 212, ../sass/screen.sass */
+  /* line 210, ../sass/screen.sass */
   100% {
     opacity: 0;
   }
 }
 
 @-moz-keyframes rightShading1 {
-  /* line 216, ../sass/screen.sass */
+  /* line 214, ../sass/screen.sass */
   10% {
     opacity: 0.8;
   }
 
-  /* line 218, ../sass/screen.sass */
+  /* line 216, ../sass/screen.sass */
   50% {
     opacity: 0;
   }
 
-  /* line 220, ../sass/screen.sass */
+  /* line 218, ../sass/screen.sass */
   75% {
     opacity: 0;
   }
 
-  /* line 222, ../sass/screen.sass */
+  /* line 220, ../sass/screen.sass */
   100% {
     opacity: 0.8;
   }
 }
 
 @-webkit-keyframes rightShading1 {
-  /* line 216, ../sass/screen.sass */
+  /* line 214, ../sass/screen.sass */
   10% {
     opacity: 0.8;
   }
 
-  /* line 218, ../sass/screen.sass */
+  /* line 216, ../sass/screen.sass */
   50% {
     opacity: 0;
   }
 
-  /* line 220, ../sass/screen.sass */
+  /* line 218, ../sass/screen.sass */
   75% {
     opacity: 0;
   }
 
-  /* line 222, ../sass/screen.sass */
+  /* line 220, ../sass/screen.sass */
   100% {
     opacity: 0.8;
   }
 }
 
 @-o-keyframes rightShading1 {
-  /* line 216, ../sass/screen.sass */
+  /* line 214, ../sass/screen.sass */
   10% {
     opacity: 0.8;
   }
 
-  /* line 218, ../sass/screen.sass */
+  /* line 216, ../sass/screen.sass */
   50% {
     opacity: 0;
   }
 
-  /* line 220, ../sass/screen.sass */
+  /* line 218, ../sass/screen.sass */
   75% {
     opacity: 0;
   }
 
-  /* line 222, ../sass/screen.sass */
+  /* line 220, ../sass/screen.sass */
   100% {
     opacity: 0.8;
   }
 }
 
 @-ms-keyframes rightShading1 {
-  /* line 216, ../sass/screen.sass */
+  /* line 214, ../sass/screen.sass */
   10% {
     opacity: 0.8;
   }
 
-  /* line 218, ../sass/screen.sass */
+  /* line 216, ../sass/screen.sass */
   50% {
     opacity: 0;
   }
 
-  /* line 220, ../sass/screen.sass */
+  /* line 218, ../sass/screen.sass */
   75% {
     opacity: 0;
   }
 
-  /* line 222, ../sass/screen.sass */
+  /* line 220, ../sass/screen.sass */
   100% {
     opacity: 0.8;
   }
 }
 
 @keyframes rightShading1 {
-  /* line 216, ../sass/screen.sass */
+  /* line 214, ../sass/screen.sass */
   10% {
     opacity: 0.8;
   }
 
-  /* line 218, ../sass/screen.sass */
+  /* line 216, ../sass/screen.sass */
   50% {
     opacity: 0;
   }
 
-  /* line 220, ../sass/screen.sass */
+  /* line 218, ../sass/screen.sass */
   75% {
     opacity: 0;
   }
 
-  /* line 222, ../sass/screen.sass */
+  /* line 220, ../sass/screen.sass */
   100% {
     opacity: 0.8;
   }
 }
 
 @-moz-keyframes rotateTop {
-  /* line 226, ../sass/screen.sass */
+  /* line 224, ../sass/screen.sass */
   0% {
     -moz-transform: rotateZ(0);
     transform: rotateZ(0);
   }
 
-  /* line 228, ../sass/screen.sass */
+  /* line 226, ../sass/screen.sass */
   100% {
     -moz-transform: rotateZ(360deg);
     transform: rotateZ(360deg);
@@ -1307,13 +1307,13 @@ sup {
 }
 
 @-webkit-keyframes rotateTop {
-  /* line 226, ../sass/screen.sass */
+  /* line 224, ../sass/screen.sass */
   0% {
     -webkit-transform: rotateZ(0);
     transform: rotateZ(0);
   }
 
-  /* line 228, ../sass/screen.sass */
+  /* line 226, ../sass/screen.sass */
   100% {
     -webkit-transform: rotateZ(360deg);
     transform: rotateZ(360deg);
@@ -1321,13 +1321,13 @@ sup {
 }
 
 @-o-keyframes rotateTop {
-  /* line 226, ../sass/screen.sass */
+  /* line 224, ../sass/screen.sass */
   0% {
     -o-transform: rotateZ(0);
     transform: rotateZ(0);
   }
 
-  /* line 228, ../sass/screen.sass */
+  /* line 226, ../sass/screen.sass */
   100% {
     -o-transform: rotateZ(360deg);
     transform: rotateZ(360deg);
@@ -1335,13 +1335,13 @@ sup {
 }
 
 @-ms-keyframes rotateTop {
-  /* line 226, ../sass/screen.sass */
+  /* line 224, ../sass/screen.sass */
   0% {
     -ms-transform: rotateZ(0);
     transform: rotateZ(0);
   }
 
-  /* line 228, ../sass/screen.sass */
+  /* line 226, ../sass/screen.sass */
   100% {
     -ms-transform: rotateZ(360deg);
     transform: rotateZ(360deg);
@@ -1349,19 +1349,19 @@ sup {
 }
 
 @keyframes rotateTop {
-  /* line 226, ../sass/screen.sass */
+  /* line 224, ../sass/screen.sass */
   0% {
     transform: rotateZ(0);
   }
 
-  /* line 228, ../sass/screen.sass */
+  /* line 226, ../sass/screen.sass */
   100% {
     transform: rotateZ(360deg);
   }
 }
 
 @-moz-keyframes introduceCube {
-  /* line 232, ../sass/screen.sass */
+  /* line 230, ../sass/screen.sass */
   0% {
     opacity: 0;
     top: -20px;
@@ -1369,12 +1369,12 @@ sup {
     transform: scale(0.6);
   }
 
-  /* line 236, ../sass/screen.sass */
+  /* line 234, ../sass/screen.sass */
   20% {
     opacity: 1;
   }
 
-  /* line 238, ../sass/screen.sass */
+  /* line 236, ../sass/screen.sass */
   100% {
     top: 0;
     -moz-transform: scale(1);
@@ -1383,7 +1383,7 @@ sup {
 }
 
 @-webkit-keyframes introduceCube {
-  /* line 232, ../sass/screen.sass */
+  /* line 230, ../sass/screen.sass */
   0% {
     opacity: 0;
     top: -20px;
@@ -1391,12 +1391,12 @@ sup {
     transform: scale(0.6);
   }
 
-  /* line 236, ../sass/screen.sass */
+  /* line 234, ../sass/screen.sass */
   20% {
     opacity: 1;
   }
 
-  /* line 238, ../sass/screen.sass */
+  /* line 236, ../sass/screen.sass */
   100% {
     top: 0;
     -webkit-transform: scale(1);
@@ -1405,7 +1405,7 @@ sup {
 }
 
 @-o-keyframes introduceCube {
-  /* line 232, ../sass/screen.sass */
+  /* line 230, ../sass/screen.sass */
   0% {
     opacity: 0;
     top: -20px;
@@ -1413,12 +1413,12 @@ sup {
     transform: scale(0.6);
   }
 
-  /* line 236, ../sass/screen.sass */
+  /* line 234, ../sass/screen.sass */
   20% {
     opacity: 1;
   }
 
-  /* line 238, ../sass/screen.sass */
+  /* line 236, ../sass/screen.sass */
   100% {
     top: 0;
     -o-transform: scale(1);
@@ -1427,7 +1427,7 @@ sup {
 }
 
 @-ms-keyframes introduceCube {
-  /* line 232, ../sass/screen.sass */
+  /* line 230, ../sass/screen.sass */
   0% {
     opacity: 0;
     top: -20px;
@@ -1435,12 +1435,12 @@ sup {
     transform: scale(0.6);
   }
 
-  /* line 236, ../sass/screen.sass */
+  /* line 234, ../sass/screen.sass */
   20% {
     opacity: 1;
   }
 
-  /* line 238, ../sass/screen.sass */
+  /* line 236, ../sass/screen.sass */
   100% {
     top: 0;
     -ms-transform: scale(1);
@@ -1449,19 +1449,19 @@ sup {
 }
 
 @keyframes introduceCube {
-  /* line 232, ../sass/screen.sass */
+  /* line 230, ../sass/screen.sass */
   0% {
     opacity: 0;
     top: -20px;
     transform: scale(0.6);
   }
 
-  /* line 236, ../sass/screen.sass */
+  /* line 234, ../sass/screen.sass */
   20% {
     opacity: 1;
   }
 
-  /* line 238, ../sass/screen.sass */
+  /* line 236, ../sass/screen.sass */
   100% {
     top: 0;
     transform: scale(1);
