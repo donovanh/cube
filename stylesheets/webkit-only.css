@@ -61,8 +61,7 @@ figure {
   display: block;
   width: 300px;
   height: 300px;
-  background-color: #ccc;
-  background-size: 100%;
+  background-color: #60c2ef;
   position: absolute;
   overflow: hidden;
   -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(50%, transparent), to(RGBA(0, 0, 0, 0.1)));
@@ -104,11 +103,11 @@ figure:after {
 }
 
 .back:before {
-  -webkit-animation: backShading1 10s infinite linear;
+  -webkit-animation: backShading2 10s infinite linear;
 }
 
 .back:after {
-  -webkit-animation: backShading2 10s infinite linear;
+  -webkit-animation: backShading1 10s infinite linear;
 }
 
 .top {

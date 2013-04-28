@@ -55,13 +55,38 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-  background-color: #2c3035;
+  background-color: #88c560;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7fa8fb), color-stop(250px, #c0d4fd), color-stop(250px, #64a43a), color-stop(100%, #88c560));
+  background: -webkit-linear-gradient(#7fa8fb 0%, #c0d4fd 250px, #64a43a 250px, #88c560);
+  background: -moz-linear-gradient(#7fa8fb 0%, #c0d4fd 250px, #64a43a 250px, #88c560);
+  background: -o-linear-gradient(#7fa8fb 0%, #c0d4fd 250px, #64a43a 250px, #88c560);
+  background: linear-gradient(#7fa8fb 0%, #c0d4fd 250px, #64a43a 250px, #88c560);
 }
 
+/* Fallback code */
+.stage {
+  display: none;
+}
+
+.csstransforms3d .stage {
+  display: block;
+}
+
+.fallback-stage {
+  width: 100%;
+  height: 600px;
+  background: url(../images/fallback.png) no-repeat center;
+}
+
+.csstransforms3d .fallback-stage {
+  display: none;
+}
+
+/* Minecraft Cube */
 .stage {
   width: 600px;
   height: 500px;
-  margin: 100px auto;
+  margin: 10px auto;
   position: relative;
   -webkit-perspective: 1600px;
   -moz-perspective: 1600px;
@@ -85,11 +110,11 @@ body {
   -ms-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -webkit-animation: rotate 20s infinite linear;
-  -moz-animation: rotate 20s infinite linear;
-  -ms-animation: rotate 20s infinite linear;
-  -o-animation: rotate 20s infinite linear;
-  animation: rotate 20s infinite linear;
+  -webkit-animation: rotate 10s infinite linear;
+  -moz-animation: rotate 10s infinite linear;
+  -ms-animation: rotate 10s infinite linear;
+  -o-animation: rotate 10s infinite linear;
+  animation: rotate 10s infinite linear;
 }
 .stage .cube-positioning {
   width: 100%;
@@ -101,77 +126,15 @@ body {
   transform-style: preserve-3d;
   position: absolute;
 }
-.stage .cube-positioning.one {
-  -webkit-transform: translateZ(100px) translateX(-50px);
-  -moz-transform: translateZ(100px) translateX(-50px);
-  -ms-transform: translateZ(100px) translateX(-50px);
-  -o-transform: translateZ(100px) translateX(-50px);
-  transform: translateZ(100px) translateX(-50px);
-  z-index: 10;
-}
-.stage .cube-positioning.two {
-  -webkit-transform: translateZ(-500px) translateX(420px);
-  -moz-transform: translateZ(-500px) translateX(420px);
-  -ms-transform: translateZ(-500px) translateX(420px);
-  -o-transform: translateZ(-500px) translateX(420px);
-  transform: translateZ(-500px) translateX(420px);
-  z-index: 5;
-}
-.stage .cube-positioning.two figure {
-  background: url(../images/cube.jpg);
-  background-size: 100%;
-}
-.stage .cube-positioning.three {
-  -webkit-transform: translateZ(-1000px) translateX(-500px);
-  -moz-transform: translateZ(-1000px) translateX(-500px);
-  -ms-transform: translateZ(-1000px) translateX(-500px);
-  -o-transform: translateZ(-1000px) translateX(-500px);
-  transform: translateZ(-1000px) translateX(-500px);
-}
-.stage .cube-positioning.three figure {
-  background-color: #6b522b;
-  background-image: repeating-linear-gradient(0deg, transparent, transparent 20px, rgba(255, 255, 255, 0.25) 21px, rgba(255, 255, 255, 0.25) 60px, transparent 61px, transparent 80px);
-  background-size: 80px 80px;
-}
-.stage .cube-positioning.three figure.top {
-  background-image: none;
-}
-.stage .cube-positioning.three figure.top:before {
-  width: 50px;
-  height: 50px;
-  top: 50%;
-  left: 50%;
-  opacity: 1;
-  margin: -25px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
-  border-radius: 50px;
-  background: #c80000;
-}
-.stage .cube-positioning.four {
-  -webkit-transform: translateZ(-1200px) translateX(50px);
-  -moz-transform: translateZ(-1200px) translateX(50px);
-  -ms-transform: translateZ(-1200px) translateX(50px);
-  -o-transform: translateZ(-1200px) translateX(50px);
-  transform: translateZ(-1200px) translateX(50px);
-  z-index: 5;
-}
-.stage .cube-positioning.four figure {
-  background: url(../images/mc_side.png);
-  background-size: 100%;
-}
-.stage .cube-positioning.four figure.top {
-  background-image: url(../images/mc_top.png);
-}
 .stage figure {
   display: block;
   width: 300px;
   height: 300px;
   left: 150px;
   top: 150px;
-  background-color: #aaaaaa;
+  background-color: #64a43a;
+  background-image: url(../images/mc_side.png);
+  background-size: 100%;
   position: absolute;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
@@ -206,7 +169,6 @@ body {
   z-index: 10;
 }
 .stage .back {
-  background-color: #52acff;
   -webkit-transform: rotateY(180deg) translateZ(150px);
   -moz-transform: rotateY(180deg) translateZ(150px);
   -ms-transform: rotateY(180deg) translateZ(150px);
@@ -214,13 +176,12 @@ body {
   transform: rotateY(180deg) translateZ(150px);
 }
 .stage .top {
-  background-color: #fff952;
   -webkit-transform: rotateX(90deg) translateZ(150px);
   -moz-transform: rotateX(90deg) translateZ(150px);
   -ms-transform: rotateX(90deg) translateZ(150px);
   -o-transform: rotateX(90deg) translateZ(150px);
   transform: rotateX(90deg) translateZ(150px);
-  background-image: none;
+  background-image: url(../images/mc_top.png);
   -webkit-box-reflect: none;
 }
 .stage .top:after {
@@ -235,11 +196,11 @@ body {
   background: -moz-radial-gradient(bottom, rgba(0, 0, 0, 0), #000000);
   background: -o-radial-gradient(bottom, rgba(0, 0, 0, 0), #000000);
   background: radial-gradient(bottom, rgba(0, 0, 0, 0), #000000);
-  -webkit-animation: rotateTop 20s infinite linear;
-  -moz-animation: rotateTop 20s infinite linear;
-  -ms-animation: rotateTop 20s infinite linear;
-  -o-animation: rotateTop 20s infinite linear;
-  animation: rotateTop 20s infinite linear;
+  -webkit-animation: rotateTop 10s infinite linear;
+  -moz-animation: rotateTop 10s infinite linear;
+  -ms-animation: rotateTop 10s infinite linear;
+  -o-animation: rotateTop 10s infinite linear;
+  animation: rotateTop 10s infinite linear;
 }
 .stage .bottom {
   -webkit-transform: rotateX(-90deg) translateZ(150px);
@@ -259,7 +220,6 @@ body {
   -webkit-box-reflect: none;
 }
 .stage .left {
-  background-color: #52ff73;
   -webkit-transform: rotateY(-90deg) translateZ(150px);
   -moz-transform: rotateY(-90deg) translateZ(150px);
   -ms-transform: rotateY(-90deg) translateZ(150px);
@@ -267,21 +227,20 @@ body {
   transform: rotateY(-90deg) translateZ(150px);
 }
 .stage .left:before {
-  -webkit-animation: leftShading1 20s infinite linear;
-  -moz-animation: leftShading1 20s infinite linear;
-  -ms-animation: leftShading1 20s infinite linear;
-  -o-animation: leftShading1 20s infinite linear;
-  animation: leftShading1 20s infinite linear;
+  -webkit-animation: leftShading1 10s infinite linear;
+  -moz-animation: leftShading1 10s infinite linear;
+  -ms-animation: leftShading1 10s infinite linear;
+  -o-animation: leftShading1 10s infinite linear;
+  animation: leftShading1 10s infinite linear;
 }
 .stage .left:after {
-  -webkit-animation: leftShading2 20s infinite linear;
-  -moz-animation: leftShading2 20s infinite linear;
-  -ms-animation: leftShading2 20s infinite linear;
-  -o-animation: leftShading2 20s infinite linear;
-  animation: leftShading2 20s infinite linear;
+  -webkit-animation: leftShading2 10s infinite linear;
+  -moz-animation: leftShading2 10s infinite linear;
+  -ms-animation: leftShading2 10s infinite linear;
+  -o-animation: leftShading2 10s infinite linear;
+  animation: leftShading2 10s infinite linear;
 }
 .stage .right {
-  background-color: #ff5262;
   -webkit-transform: rotateY(90deg) translateZ(150px);
   -moz-transform: rotateY(90deg) translateZ(150px);
   -ms-transform: rotateY(90deg) translateZ(150px);
@@ -289,21 +248,20 @@ body {
   transform: rotateY(90deg) translateZ(150px);
 }
 .stage .right:before {
-  -webkit-animation: rightShading1 20s infinite linear;
-  -moz-animation: rightShading1 20s infinite linear;
-  -ms-animation: rightShading1 20s infinite linear;
-  -o-animation: rightShading1 20s infinite linear;
-  animation: rightShading1 20s infinite linear;
+  -webkit-animation: rightShading1 10s infinite linear;
+  -moz-animation: rightShading1 10s infinite linear;
+  -ms-animation: rightShading1 10s infinite linear;
+  -o-animation: rightShading1 10s infinite linear;
+  animation: rightShading1 10s infinite linear;
 }
 .stage .right:after {
-  -webkit-animation: rightShading2 20s infinite linear;
-  -moz-animation: rightShading2 20s infinite linear;
-  -ms-animation: rightShading2 20s infinite linear;
-  -o-animation: rightShading2 20s infinite linear;
-  animation: rightShading2 20s infinite linear;
+  -webkit-animation: rightShading2 10s infinite linear;
+  -moz-animation: rightShading2 10s infinite linear;
+  -ms-animation: rightShading2 10s infinite linear;
+  -o-animation: rightShading2 10s infinite linear;
+  animation: rightShading2 10s infinite linear;
 }
 .stage .front {
-  background-color: #60c2ef;
   -webkit-transform: translateZ(150px);
   -moz-transform: translateZ(150px);
   -ms-transform: translateZ(150px);
@@ -311,18 +269,18 @@ body {
   transform: translateZ(150px);
 }
 .stage .front:before {
-  -webkit-animation: frontShading1 20s infinite linear;
-  -moz-animation: frontShading1 20s infinite linear;
-  -ms-animation: frontShading1 20s infinite linear;
-  -o-animation: frontShading1 20s infinite linear;
-  animation: frontShading1 20s infinite linear;
+  -webkit-animation: frontShading1 10s infinite linear;
+  -moz-animation: frontShading1 10s infinite linear;
+  -ms-animation: frontShading1 10s infinite linear;
+  -o-animation: frontShading1 10s infinite linear;
+  animation: frontShading1 10s infinite linear;
 }
 .stage .front:after {
-  -webkit-animation: frontShading2 20s infinite linear;
-  -moz-animation: frontShading2 20s infinite linear;
-  -ms-animation: frontShading2 20s infinite linear;
-  -o-animation: frontShading2 20s infinite linear;
-  animation: frontShading2 20s infinite linear;
+  -webkit-animation: frontShading2 10s infinite linear;
+  -moz-animation: frontShading2 10s infinite linear;
+  -ms-animation: frontShading2 10s infinite linear;
+  -o-animation: frontShading2 10s infinite linear;
+  animation: frontShading2 10s infinite linear;
 }
 
 @-moz-keyframes rotate {
