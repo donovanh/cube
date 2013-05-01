@@ -1,0 +1,154 @@
+
+@import compass/reset
+@import compass/css3
+@import animation
+
+$animationDuration: 1s
+$maxOpacity: 0.9
+
+body
+  background-color: #fff
+
+/* Fallback code */
+
+.stage
+  display: none
+
+.csstransforms3d .stage
+  display: block
+
+
+.fallback-stage
+  width: 100%
+  height: 600px
+  background: url(../images/net-fallback.jpg) no-repeat center
+
+.csstransforms3d .fallback-stage
+  display: none
+
+/* InfoCube */
+
+p
+  font: Georgia, serif
+  font-size: 28px
+  line-height: 1.4em
+  text-align: center
+  padding: 50px 40px
+
+.stage
+  width: 600px
+  height: 500px
+  margin: 10px auto
+  position: relative
+  @include perspective(1600px)
+  @include perspective-origin(50% 40px)
+  @include animation(introduceCube 1s ease-out)
+
+  .cube
+    @include transform-style(preserve-3d)
+    @include transition(all 0.5s ease)
+    @include transform(rotateY(0))
+
+    &:hover
+      @include transform(rotateY(-100deg))
+      @include transition(all 0.4s ease)
+
+      span.shading
+        opacity: 0
+        @include transition(all 0.4s ease)
+
+  .cube-positioning
+    width: 100%
+    height: 100%
+    @include transform-style(preserve-3d)
+    position: absolute
+
+  figure
+    display: block
+    width: 300px
+    height: 300px
+    left: 150px
+    top: 150px
+    background-color: #eee
+    background: url(../images/white-noise.jpg) no-repeat
+    background-size: 100% 100%
+    background-size: 100%
+    position: absolute
+    @include backface-visibility(visible)
+    overflow: hidden
+    -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(60%, transparent), to(RGBA(0,0,0,0.25)))
+
+    &:before, &:after, .shading
+      content: ""
+      display: block
+      position: absolute
+      top: 0
+      width: 100%
+      height: 100%
+      opacity: 0
+
+    &:before, .shading
+      @include background(radial-gradient(top left, rgba(0, 0, 0, 0.5), #000))
+
+    &:after
+      @include background(radial-gradient(top right, rgba(0, 0, 0, 0.5), #000))
+
+    .shading
+      opacity: 0.2
+      @include transition(all 0.4s ease)
+        
+
+  .back
+    @include transform(rotateY(180deg) translateZ(150px))
+    &:after
+      opacity: 0.2
+
+  .top
+    @include transform(rotateX(90deg) translateZ(150px))
+    -webkit-box-reflect: none
+
+    &:after
+      content: " "
+      opacity: 0.2
+      width: 200%
+      height: 200%
+      margin-left: -50%
+      margin-top: -50%
+      display: inline-block
+      @include background(radial-gradient(bottom, rgba(0,0,0,0), #000))
+      @include animation(rotateTop $animationDuration infinite linear)
+
+
+  .bottom
+    @include transform(rotateX(-90deg) translateZ(150px) translateY(-500px))
+    @include box-shadow(0 500px 50px rgba(0,0,0,0.7))
+    @include backface-visibility(visible)
+    background: transparent
+    -webkit-box-reflect: none
+
+  .left
+    @include transform(rotateY(-90deg) translateZ(150px))
+    &:after
+      opacity: 0.2
+
+  .right
+    @include transform(rotateY(90deg) translateZ(150px))
+    &:after
+      opacity: 0.2
+
+  .front
+    background: url(../images/net-logo.jpg) no-repeat
+    @include transform(translateZ(150px))
+    &:before
+      opacity: 0.1
+
+@include keyframes(introduceCube)
+  0%
+    opacity: 0
+    top: -20px
+    @include transform(scale(0.6))
+  20%
+    opacity: 1
+  100%
+    top: 0
+    @include transform(scale(1))
