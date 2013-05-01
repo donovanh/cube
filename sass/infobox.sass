@@ -96,6 +96,10 @@ p
     .shading
       opacity: 0.4
       @include transition(all 0.4s ease)
+      z-index: -1
+
+    .content
+      z-index: 1
         
 
   .back
@@ -136,6 +140,8 @@ p
     iframe
       padding-left: 90px
       margin-top: -30px
+    &:before, &:after
+      display: none
 
   .front
     background: url(../images/net-logo.jpg) no-repeat

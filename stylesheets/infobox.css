@@ -199,6 +199,10 @@ p {
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  z-index: -1;
+}
+.stage figure .content {
+  z-index: 1;
 }
 .stage .back {
   -webkit-transform: rotateY(180deg) translateZ(150px);
@@ -275,6 +279,9 @@ p {
 .stage .right iframe {
   padding-left: 90px;
   margin-top: -30px;
+}
+.stage .right:before, .stage .right:after {
+  display: none;
 }
 .stage .front {
   background: url(../images/net-logo.jpg) no-repeat;
