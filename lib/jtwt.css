@@ -1,7 +1,7 @@
 .jtwt { list-style: none; margin-top: 100px; }
 .jtwt li { margin-bottom: 10px; }
 .jtwt li:last-child { padding: 10px 0 0 15px;}
-.jtwt_loader { text-align: center;  }
+.jtwt_loader { position: absolute; left: 10px; bottom: 10px; color: #aaa; }
 .jtwt_picture { float: left; margin-right: 10px; }
 p.jtwt_tweet_text { text-align: left; font-size: 16px; padding: 10px 30px; }
 p.jtwt_tweet_text a { text-decoration: none;}
