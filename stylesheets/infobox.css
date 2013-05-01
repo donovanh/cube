@@ -123,7 +123,7 @@ p {
   -o-transform: rotateY(0);
   transform: rotateY(0);
 }
-.stage .cube:hover, .stage .cube:active {
+.stage .cube:hover, .stage .cube.active {
   -webkit-transform: rotateY(-50deg);
   -moz-transform: rotateY(-50deg);
   -ms-transform: rotateY(-50deg);
@@ -134,7 +134,7 @@ p {
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
-.stage .cube:hover span.shading, .stage .cube:active span.shading {
+.stage .cube:hover span.shading, .stage .cube.active span.shading {
   opacity: 0.2;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
