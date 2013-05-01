@@ -56,6 +56,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
   background-color: white;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* Fallback code */
@@ -79,7 +80,6 @@ body {
 
 /* InfoCube */
 p {
-  font-family: "Open Sans", sans-serif;
   font-size: 26px;
   line-height: 1.4em;
   text-align: center;
@@ -194,7 +194,7 @@ p {
   background: radial-gradient(top right, rgba(0, 0, 0, 0.5), #000000);
 }
 .stage figure .shading {
-  opacity: 0.2;
+  opacity: 0.4;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
@@ -270,9 +270,11 @@ p {
   -ms-transform: rotateY(90deg) translateZ(150px);
   -o-transform: rotateY(90deg) translateZ(150px);
   transform: rotateY(90deg) translateZ(150px);
+  /* Follow button position */
 }
-.stage .right:after {
-  opacity: 0.2;
+.stage .right iframe {
+  padding-left: 90px;
+  margin-top: -30px;
 }
 .stage .front {
   background: url(../images/net-logo.jpg) no-repeat;
@@ -283,7 +285,7 @@ p {
   transform: translateZ(150px);
 }
 .stage .front:before {
-  opacity: 0.1;
+  opacity: 0.2;
 }
 
 @-moz-keyframes introduceCube {

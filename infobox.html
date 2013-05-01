@@ -3,6 +3,7 @@
     <title>InfoBox style</title>
     <link href="stylesheets/infobox.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="lib/jtwt.css" />
     <script src="js/modernizr.js"></script>
   </head>
   <body>
@@ -14,11 +15,25 @@
         <figure class="bottom"></figure>
         <figure class="left"></figure>
         <figure class="right">
-          <p>The world's best selling magazine for web designers and developers since 1994</p>
-          <span class="shading"></shading>
+          <span class="shading"></span>
+          <p>The world's best selling magazine <a href="foo">for web designers</a> and developers since 1994</p>
+          <a href="https://twitter.com/netmag" class="twitter-follow-button" data-show-count="false">Follow @netmag</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
         </figure>
-        <figure class="front"></figure>
+        <figure class="front">
+          <div id="twitter"></div>
+        </figure>
       </div>
     </div>
+    <script src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+    <script src="lib/jquery.jtwt.min.js"></script>
+    <script type="text/javascript">
+      $(window).load(function() {
+        $('#twitter').jtwt({
+          username : 'netmag',
+          count: 1
+        });
+      });
+    </script>
   </body>
 </html>
