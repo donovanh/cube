@@ -158,7 +158,7 @@ p {
   left: 150px;
   top: 150px;
   background-color: #eeeeee;
-  background: url(../images/white-noise.jpg) no-repeat;
+  background: url(../images/white-noise.jpg);
   background-size: 100% 100%;
   background-size: 100%;
   position: absolute;
@@ -284,7 +284,7 @@ p {
   display: none;
 }
 .stage .front {
-  background: #e0e0e0 url(../images/net-logo.jpg) no-repeat;
+  background: #e0e0e0 url(../images/net-logo.jpg);
   -webkit-transform: translateZ(150px);
   -moz-transform: translateZ(150px);
   -ms-transform: translateZ(150px);
