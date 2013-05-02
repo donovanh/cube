@@ -49,12 +49,12 @@ p
     @include transition(all 0.5s ease)
     @include transform(rotateY(0))
 
-    &:hover, &.active
+    &:hover
       @include transform(rotateY(-50deg))
       @include transition(all 0.4s ease)
 
-      span.shading
-        opacity: 0.2
+      figure.right:before, figure.front:before
+        opacity: 0.2 !important
         @include transition(all 0.4s ease)
 
   .cube-positioning
@@ -78,39 +78,27 @@ p
     overflow: hidden
     -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(60%, transparent), to(RGBA(0,0,0,0.25)))
 
-    &:before, &:after, .shading
+    &:before, &:after
       content: ""
       display: block
       position: absolute
       top: 0
+      opacity: 0
       width: 100%
       height: 100%
-      opacity: 0
-      z-index: -1
+      z-index: -5
 
-    &:before, .shading
+    &:before
       @include background(radial-gradient(top left, rgba(0, 0, 0, 0.5), #000))
 
     &:after
       @include background(radial-gradient(top right, rgba(0, 0, 0, 0.5), #000))
 
-    .shading
-      opacity: 0.4
-      @include transition(all 0.4s ease)
-
-    .content
-      z-index: 1
-        
-
-  .back
-    @include transform(rotateY(180deg) translateZ(150px))
-    &:after
-      opacity: 0.2
-
   .top
     @include transform(rotateX(90deg) translateZ(150px))
     -webkit-box-reflect: none
-
+    &:before
+      display: none
     &:after
       content: " "
       opacity: 0.2
@@ -118,9 +106,13 @@ p
       height: 200%
       margin-left: -50%
       margin-top: -50%
-      display: inline-block
       @include background(radial-gradient(bottom, rgba(0,0,0,0), #000))
-      @include animation(rotateTop $animationDuration infinite linear)
+
+  .back
+    @include transform(rotateY(180deg) translateZ(150px))
+
+  .left
+    @include transform(rotateY(-90deg) translateZ(150px))
 
   .bottom
     @include transform(rotateX(-90deg) translateZ(150px) translateY(-500px))
@@ -129,18 +121,16 @@ p
     background: transparent
     -webkit-box-reflect: none
 
-  .left
-    @include transform(rotateY(-90deg) translateZ(150px))
-    &:after
-      opacity: 0.2
-
   .right
     @include transform(rotateY(90deg) translateZ(150px))
     /* Follow button position
     iframe
       padding-left: 90px
       margin-top: -30px
-    &:before, &:after
+    &:before
+      opacity: 0.4 !important
+      @include transition(all 0.4s ease)
+    &:after
       display: none
 
   .front
@@ -148,6 +138,7 @@ p
     @include transform(translateZ(150px))
     &:before
       opacity: 0.1
+      @include transition(all 0.4s ease)
     &:after
       display: none
 
