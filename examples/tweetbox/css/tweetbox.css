@@ -88,9 +88,10 @@ p {
 
 .stage {
   width: 600px;
-  height: 500px;
+  height: 600px;
   margin: 10px auto;
   position: relative;
+  -webkit-transform-origin: 50% 150px;
   -webkit-perspective: 1600px;
   -moz-perspective: 1600px;
   -ms-perspective: 1600px;
@@ -106,6 +107,7 @@ p {
   -ms-animation: introduceCube 1s ease-out;
   -o-animation: introduceCube 1s ease-out;
   animation: introduceCube 1s ease-out;
+  overflow: hidden;
 }
 .stage .cube {
   -webkit-transform-style: preserve-3d;

@@ -3,7 +3,7 @@
     <title>InfoBox style</title>
     <link href="css/tweetbox.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/jtwt.css" />
+    <link rel="stylesheet" href="css/tweet-styles.css" />
     <script src="js/modernizr.js"></script>
   </head>
   <body>
@@ -20,23 +20,12 @@
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
         </figure>
         <figure class="front">
-          <div id="twitter"></div>
-        </figure>
+          <p style="padding: 0; margin: 85px 10px 0 10px; width: 280px">
+            <a class="twitter-timeline" href="https://twitter.com/netmag" width="280" height="200" data-tweet-limit="1" data-widget-id="330710213227315200"></a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </p>
+          </figure>
       </div>
     </div>
-    <script src="js/jquery-2.0.0.min.js"></script>
-    <script src="js/jquery.jtwt.min.js"></script>
-    <script type="text/javascript">
-      $(window).load(function() {
-        $('#twitter').jtwt({
-          username : 'netmag',
-          count: 1
-        });
-        $('.cube').click(function(e) {
-          $('.cube').toggleClass('active');
-          $('.cube').toggleClass('forwards');
-        })
-      });
-    </script>
   </body>
 </html>
