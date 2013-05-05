@@ -161,8 +161,6 @@ p {
   top: 150px;
   background-color: #eeeeee;
   background: url(../images/white-noise.jpg);
-  background-size: 100% 100%;
-  background-size: 100%;
   position: absolute;
   -webkit-backface-visibility: visible;
   -moz-backface-visibility: visible;
@@ -257,8 +255,8 @@ p {
   -ms-transform: rotateY(90deg) translateZ(150px);
   -o-transform: rotateY(90deg) translateZ(150px);
   transform: rotateY(90deg) translateZ(150px);
-  /* Follow button position */
 }
+/* Follow button positioning */
 .stage .right iframe {
   padding-left: 90px;
   margin-top: -30px;
