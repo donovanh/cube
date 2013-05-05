@@ -56,11 +56,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
   background-color: #88c560;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7fa8fb), color-stop(250px, #c0d4fd), color-stop(250px, #64a43a), color-stop(100%, #88c560));
-  background: -webkit-linear-gradient(#7fa8fb 0%, #c0d4fd 250px, #64a43a 250px, #88c560);
-  background: -moz-linear-gradient(#7fa8fb 0%, #c0d4fd 250px, #64a43a 250px, #88c560);
-  background: -o-linear-gradient(#7fa8fb 0%, #c0d4fd 250px, #64a43a 250px, #88c560);
-  background: linear-gradient(#7fa8fb 0%, #c0d4fd 250px, #64a43a 250px, #88c560);
+  background: -webkit-linear-gradient(#7fa8fb 0%, #c0d4fd 250px, #64a43a 250px, #88c560 100%);
+  background: -moz-linear-gradient(#7fa8fb 0%, #c0d4fd 250px, #64a43a 250px, #88c560 100%);
+  background: -o-linear-gradient(#7fa8fb 0%, #c0d4fd 250px, #64a43a 250px, #88c560 100%);
+  background: linear-gradient(#7fa8fb 0%, #c0d4fd 250px, #64a43a 250px, #88c560 100%);
 }
 
 /* Fallback code */
@@ -85,8 +84,8 @@ body {
 /* Minecraft Cube */
 .stage {
   width: 600px;
-  height: 500px;
-  margin: 10px auto;
+  height: 100%;
+  margin: auto;
   position: relative;
   -webkit-perspective: 1600px;
   -moz-perspective: 1600px;
