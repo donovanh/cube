@@ -1,4 +1,4 @@
-An animated 3D cube with shading, done using CSS (SASS) and HTML.
+An animated 3D cube with shading, creating using nothing but CSS (SASS) and HTML.
 
 ## How it should look
 
@@ -6,7 +6,7 @@ An animated 3D cube with shading, done using CSS (SASS) and HTML.
 
 ## Demo
 
-Here's [a demo online](http://hop.ie/css-3d-cube/).
+Here's [a demo online](http://hop.ie/cube/basic/).
 
 ## Compatibility
 
