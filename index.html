@@ -1,24 +1,45 @@
 <html>
   <head>
-    <title>3D Cube</title>
-    <link href="stylesheets/full.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <title>3D CSS in the real world</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+    body {
+      font-family: "Open Sans", sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    ul {
+      list-style: none;
+    }
+    li {
+      display: block;
+      padding: 10px;
+      font-size: 42px;
+      -webkit-transform: preserve-3d;
+      -moz-transform: preserve-3d;
+      -o-transform: preserve-3d;
+      transform: preserve-3d;
+      -webkit-transform: scale(0.8);
+      color: blue;
+      -webkit-transition: all 0.3s ease-in-out;
+    }
+    li:hover {
+      -webkit-transform: scale(1.2);
+      -webkit-transition: all 0.2s ease-in-out;
+    }
+    a {
+      text-decoration: none;
+      color: blue;
+    }
+    </style>
     <script src="js/modernizr.js"></script>
   </head>
   <body>
-    <div class="fallback-stage"></div>
-    <div class="stage">
-      <div class="cube">
-        <figure class="back"></figure>
-        <figure class="top"></figure>
-        <figure class="bottom"></figure>
-        <figure class="left"></figure>
-        <figure class="right"></figure>
-        <figure class="front"></figure>
-      </div>
-    </div>
-  <!-- <div class="stage">
-    <div class="flat"></div>
-    <div class="rotated"></div>
-  </div> -->
+    <h1>3D CSS in the Real World</h1>
+    <ul>
+      <li><a href="basic/index.html">Basic cube</a></li>
+      <li><a href="minecraft/index.html">Minecraft cube</a></li>
+      <li><a href="tweetbox/index.html">Tweetbox</a></li>
+    </ul>
   </body>
 </html>
