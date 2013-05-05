@@ -6,7 +6,33 @@
     body {
       font-family: "Open Sans", sans-serif;
       text-align: center;
-      margin-top: 50px;
+      margin-top: 100px;
+      background: url(tweetbox/images/white-noise.jpg);
+    }
+    body:before {
+      content: "";
+      position: absolute;
+      top: 14px;
+      left: 50%;
+      width: 158px;
+      margin-left: -75px;
+      height: 100px;
+      background: url(tweetbox/images/net-logo.jpg) no-repeat;
+      z-index: -2;
+    }
+    body:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom :0;
+      left: 0;
+      background: -webkit-linear-gradient(bottom, #000, transparent);
+      background: -moz-linear-gradient(bottom, #000, transparent);
+      background: -o-linear-gradient(bottom, #000, transparent);
+      background: linear-gradient(bottom, #000, transparent);
+      z-index: -1;
+      opacity: 0.5;
     }
     ul {
       list-style: none;
