@@ -55,7 +55,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-  background-color: white;
+  background-color: #1c3243;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -137,7 +137,7 @@ p {
   transition: all 0.4s ease;
 }
 .stage .cube:hover figure.right:before, .stage .cube:hover figure.front:before {
-  opacity: 0.2 !important;
+  opacity: 0.1 !important;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
@@ -168,7 +168,7 @@ p {
   -o-backface-visibility: visible;
   backface-visibility: visible;
   overflow: hidden;
-  -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(60%, transparent), to(RGBA(0, 0, 0, 0.25)));
+  -webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(80%, transparent), to(RGBA(0, 0, 0, 0.1)));
 }
 .stage figure:before, .stage figure:after {
   content: "";
